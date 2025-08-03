@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+.no-highlight {
+    background-color: transparent !important;
+}
+
+.active {
+    color: #75afd8;
+}
+
+@media (max-width: 768px) {
+    .active {
+        background-color: #09385e;
+        color: #75afd8;
+        border-radius: 8px;
+    }
+}
