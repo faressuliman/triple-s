@@ -19,7 +19,7 @@ const Navbar = () => {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex items-center p-2 w-8 h-8 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-[#09385e] focus:outline-none focus:ring-2 focus:ring-[#09385e]"
+          className="inline-flex items-center p-2 w-8 h-8 justify-center text-sm text-[#38a8d4] rounded-lg md:hidden hover:bg-[#09385e] focus:outline-none focus:ring-2 focus:ring-[#09385e] duration-300"
         >
           <span className="sr-only">Open main menu</span>
           <svg
