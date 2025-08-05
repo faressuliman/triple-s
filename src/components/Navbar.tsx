@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../assets/logo.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#07254B] border-white">
+    <nav className="bg-[#07254B] md:bg-transparent border-white md:absolute md:inset-0 md:z-10">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         {/* Logo */}
         <NavLink to="/" className="flex items-center space-x-3 rtl:space-x-reverse no-highlight">
-          <img src="../src/assets/logo.png" className="h-14 object-contain" alt="Triple S Logo" />
+          <img src={logo} className="h-14 object-contain" alt="Triple S Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
             Triple S Marine Services
           </span>
@@ -41,29 +42,29 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-[#75afd8] rounded-lg bg-[#07254B] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-[#75afd8] rounded-lg md:bg-transparent bg-[#07254B] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
             <li>
               <NavLink
                 to="/"
-                className="block py-2 px-2 text-gray-300 rounded-sm md:hover:bg-transparent md:hover:text-[#75afd8] sm:py-1.5"
+                className="block py-2 px-2 text-gray-300 rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-500"
               >
-                Home
+                HOME
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/about"
-                className="block py-2 px-2 text-gray-300 rounded-sm md:hover:bg-transparent md:hover:text-[#75afd8] sm:py-1.5"
+                className="block py-2 px-2 text-gray-300 rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-500"
               >
-                About
+                ABOUT US
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/contact"
-                className="block py-2 px-2 text-gray-300 rounded-sm md:hover:bg-transparent md:hover:text-[#75afd8] sm:py-1.5"
+                className="block py-2 px-2 text-gray-300 rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-500"
               >
-                Contact
+                CONTACT
               </NavLink>
             </li>
           </ul>

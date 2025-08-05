@@ -5,7 +5,8 @@
 }
 
 .active {
-    color: #75afd8;
+    color: white;
+    font-weight: bolder;
 }
 
 @media (max-width: 768px) {
