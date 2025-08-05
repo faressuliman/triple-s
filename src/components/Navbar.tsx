@@ -11,7 +11,7 @@ const Navbar = () => {
         {/* Logo */}
         <NavLink to="/" className="flex items-center space-x-3 rtl:space-x-reverse no-highlight">
           <img src={logo} className="h-14 object-contain" alt="Triple S Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#d4d4d4]">
             Triple S Marine Services
           </span>
         </NavLink>
@@ -19,7 +19,7 @@ const Navbar = () => {
         {/* Mobile Menu Toggle Button */}
         <button
           type="button"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen(prev => !prev)}
           className="inline-flex items-center p-2 w-8 h-8 justify-center text-sm text-[#38a8d4] rounded-lg md:hidden hover:bg-[#09385e] focus:outline-none focus:ring-2 focus:ring-[#09385e] duration-300"
         >
           <span className="sr-only">Open main menu</span>
