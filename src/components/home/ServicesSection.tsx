@@ -3,8 +3,8 @@ import { services } from "../../data/";
 
 const ServicesSection = () => {
   return (
-    <section className="py-16 bg-[#F8FDFF]">
-      <div className="container mx-auto px-4">
+    <div className="py-16 bg-[#F8FDFF]">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-[#07254B] mb-4">
             Why Choose Us
@@ -26,7 +26,7 @@ const ServicesSection = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
