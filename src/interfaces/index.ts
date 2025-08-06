@@ -4,3 +4,10 @@ export interface ISlideShow {
     title: string,
     description: string
 }
+
+export interface IServices {
+    icon: React.ElementType
+    title: string,
+    description: string,
+    color: string
+}
