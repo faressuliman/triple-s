@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import Button from "../ui/Button";
 import heroImage from "../../assets/hero-marine.jpg";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <div className="relative h-screen flex items-center justify-center overflow-hidden">
+    <motion.div className="relative h-screen flex items-center justify-center overflow-hidden"
+        initial={{ opacity: 0.7}}
+        whileInView={{ opacity: 1,}}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={{ once: true }}>
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0">
         <img
@@ -38,7 +43,7 @@ const HeroSection = () => {
         </div>
 
       </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { slideShow } from "../../data";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -24,7 +25,13 @@ const ImageSlideShow = () => {
   return (
     <div className="py-16 bg-[#F8FDFF]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <motion.div 
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-[#07254B] mb-4">
             Our Marine Excellence
           </h2>
@@ -32,10 +39,16 @@ const ImageSlideShow = () => {
             Discover our comprehensive range of marine services and equipment
             designed to meet the highest industry standards.
           </p>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="relative max-w-4xl mx-auto px-4 ">
+      <motion.div 
+        className="relative max-w-4xl mx-auto px-4"
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={{ once: true }}
+      >
         <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-ocean">
           {slideShow.map((slide, index) => (
             <div
@@ -61,30 +74,38 @@ const ImageSlideShow = () => {
         </div>
 
         {/* Navigation Buttons */}
-        <button
+        <motion.button
           className="cursor-pointer absolute left-8 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 text-white rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
           onClick={prevSlide}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
           <ChevronLeft size={24} />
-        </button>
-        <button
+        </motion.button>
+        <motion.button
           className="cursor-pointer absolute right-8 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 text-white rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
           onClick={nextSlide}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
           <ChevronRight size={24} />
-        </button>
+        </motion.button>
 
         {/* Slide Indicators */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
           {slideShow.map((_, index) => (
-            <button key={index} className={`cursor-pointer w-3 h-3 rounded-full transition-all ${
+            <motion.button 
+              key={index} 
+              className={`cursor-pointer w-3 h-3 rounded-full transition-all ${
                 index === currentSlide ? "bg-green-500 scale-125" : "bg-white/50 hover:bg-white/70"
               }`}
               onClick={() => setCurrentSlide(index)}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
             />
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
