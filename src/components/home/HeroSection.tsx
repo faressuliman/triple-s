@@ -19,18 +19,18 @@ const HeroSection = () => {
           autoPlay={true}
           muted={true}
           loop={true}
-          className="w-full h-[88vh] object-cover"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07254B]/80 to-[#07254B]/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#19254B]/80 to-[#000000]/40" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-8">
-        <div className="max-w-2xl">
-          <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold mb-4 break-words">
+        <div className="flex flex-col max-w-2xl">
+          <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap mb-8">
             Empowering Progress in the <span className="text-[#38d49c]">Marine</span> Industry
           </h1>
-          <p className="md:text-xl text-lg text-[#d4d4d4] mb-6">
+          <p className="md:text-xl text-lg text-[#f0f0f0] mb-8">
             Triple S delivers comprehensive, end-to-end solutions for the maritime sector through
             connecting professionals and businesses with trusted services, technical expertise,
             and innovative tools that drive growth, ensure safety, and promote sustainability across marine operations.

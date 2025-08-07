@@ -7,11 +7,11 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[#07254B] md:bg-transparent border-white md:absolute md:inset-0 md:z-10">
-      <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto lg:px-16 px-4 py-2">
+      <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto lg:px-16 px-4 py-4">
         {/* Logo */}
         <NavLink to="/" className="flex items-center md:space-x-3 space-x-1 rtl:space-x-reverse no-highlight">
           <img src={logo} className="h-14 object-contain" alt="Triple S Logo" />
-          <span className="self-center md:text-2xl text-lg font-semibold whitespace-nowrap text-[#d4d4d4]">
+          <span className="self-center md:text-2xl text-lg font-semibold whitespace-nowrap text-white">
             Triple S Marine Services
           </span>
         </NavLink>
@@ -20,7 +20,7 @@ const Navbar = () => {
         <button
           type="button"
           onClick={() => setIsOpen(prev => !prev)}
-          className="inline-flex items-center p-2 w-8 h-8 justify-center text-sm text-[#38a8d4] rounded-lg md:hidden hover:bg-[#09385e] focus:outline-none focus:ring-2 focus:ring-[#09385e] duration-300"
+          className="inline-flex items-center p-2 w-8 h-8 justify-center text-sm text-[#38d49c] rounded-lg md:hidden hover:bg-[#09385e] focus:outline-none focus:ring-2 focus:ring-[#09385e] transition-all duration-300"
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -40,31 +40,44 @@ const Navbar = () => {
           </svg>
         </button>
 
-        {/* Navigation Links */}
-        <div className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-[#75afd8] rounded-lg md:bg-transparent bg-[#07254B] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+        <div
+          className={`
+            transition-all duration-300 ease-in-out
+            overflow-hidden md:overflow-visible
+            md:block md:opacity-100 md:w-auto w-full
+            ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}
+          `}
+          id="navbar-default"
+        >
+          <ul className={`
+            font-medium flex flex-col p-4 md:p-0 mt-4 border border-[#75afd8] rounded-lg 
+            md:bg-transparent bg-[#07254B] md:flex-row md:space-x-8 rtl:space-x-reverse 
+            md:mt-0 md:border-0 
+            transform transition-all duration-300 ease-in-out 
+            ${isOpen ? "translate-y-0" : "-translate-y-4"}
+          `}>
             <li>
               <NavLink
                 to="/"
-                className="block py-2 px-2 text-gray-300 rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-500"
+                className="block py-2 px-2 text-gray-300 normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-300"
               >
-                HOME
+                Home
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/about"
-                className="block py-2 px-2 text-gray-300 rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-500"
+                className="block py-2 px-2 text-gray-300 normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-300"
               >
-                ABOUT US
+                About Us
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/contact"
-                className="block py-2 px-2 text-gray-300 rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-500"
+                className="block py-2 px-2 text-gray-300 normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-300"
               >
-                CONTACT
+                Contact
               </NavLink>
             </li>
           </ul>

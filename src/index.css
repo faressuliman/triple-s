@@ -5,14 +5,14 @@
 }
 
 .active {
-    color: white;
+    color: #38d49c;
     font-weight: bolder;
 }
 
 @media (max-width: 768px) {
     .active {
         background-color: #09385e;
-        color: #75afd8;
+        color: #38d49c;
         border-radius: 8px;
     }
 }
