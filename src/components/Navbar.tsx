@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[#07254B] md:bg-transparent border-white md:absolute md:inset-0 md:z-10">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto lg:px-16 px-4 py-2">
         {/* Logo */}
         <NavLink to="/" className="flex items-center md:space-x-3 space-x-1 rtl:space-x-reverse no-highlight">
           <img src={logo} className="h-14 object-contain" alt="Triple S Logo" />

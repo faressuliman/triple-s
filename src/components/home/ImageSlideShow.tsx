@@ -32,10 +32,10 @@ const ImageSlideShow = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-[#07254B] mb-4">
+          <h2 className="md:text-3xl text-2xl font-bold text-[#07254B] mb-4">
             Our Marine Excellence
           </h2>
-          <p className="text-lg max-w-2xl mx-auto text-[#5577A0]">
+          <p className="md:text-lg text-md max-w-2xl mx-auto text-[#5577A0]">
             Discover our comprehensive range of marine services and equipment
             designed to meet the highest industry standards.
           </p>

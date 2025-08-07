@@ -3,11 +3,10 @@ import {
     createRoutesFromElements,
     Route,
 } from "react-router-dom";
-
+import Layout from "../components/Layout";
 import Home from "../pages";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
-import Layout from "../components/Layout";
 import NotFound from "../pages/NotFound";
 
 const router = createBrowserRouter(
@@ -18,11 +17,9 @@ const router = createBrowserRouter(
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
             </Route>
-
             <Route path="*" element={<NotFound />} />
         </>
     )
-
 );
 
 export default router;

@@ -13,10 +13,10 @@ const ServicesSection = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <h2 className="text-3xl font-bold text-[#07254B] mb-4">
+          <h2 className="md:text-3xl text-2xl font-bold text-[#07254B] mb-4">
             Why Choose Us
           </h2>
-          <p className="text-lg max-w-2xl mx-auto text-[#5577A0]">
+          <p className="md:text-lg text-md max-w-2xl mx-auto text-[#5577A0]">
             We deliver exceptional marine services with unwavering commitment to quality, customization, and punctuality.
           </p>
         </motion.div>

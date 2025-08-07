@@ -1,0 +1,77 @@
+.marine-loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2196f3 0%, #21a1e1 100%);
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.marine-bg-gradient {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at 60% 40%, rgba(255,255,255,0.18) 0%, rgba(33,150,243,0.0) 70%);
+  z-index: 1;
+}
+
+.marine-waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 180px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.wave-svg {
+  width: 100vw;
+  height: 180px;
+  display: block;
+}
+
+.marine-logo-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marine-logo {
+  width: 120px;
+  height: 120px;
+  z-index: 12;
+  position: relative;
+  animation: marine-logo-bounce 1.6s cubic-bezier(0.4,0,0.2,1) infinite;
+  filter: drop-shadow(0 0 32px #21a1e1) drop-shadow(0 0 16px #2196f3);
+}
+
+.marine-logo-glow {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(33,150,243,0.18) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 11;
+  animation: marine-glow-pulse 2.2s ease-in-out infinite;
+}
+
+@keyframes marine-logo-bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-18px) scale(1.08); }
+}
+
+@keyframes marine-glow-pulse {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.12); }
+}
