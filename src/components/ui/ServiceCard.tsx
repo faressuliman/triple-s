@@ -1,10 +1,10 @@
 import type { IServices } from "../../interfaces";
 
 const ServiceCard = ({ icon: Icon, title, description, color }: IServices) => {
-    const lineColor = 'bg-gradient-to-r from-[#224361] to-[#009dff]';
+    const lineColor = 'bg-gradient-to-r from-[#009dff] to-[#224361]';
     
     return (
-        <div className={`bg-white rounded-lg h-80 md:w-auto w-auto md:h-92 mx-auto shadow-md hover:shadow-indigo-200 border border-[#CEF3FF] p-8 text-center transition-all duration-400 transform hover:scale-102 hover:-translate-y-3 relative overflow-hidden group hover:cursor-default`}>
+        <div className={`bg-white rounded-lg h-80 md:w-auto w-auto md:h-92 mx-auto shadow-lg hover:shadow-xl hover:shadow-indigo-300 border border-[#CEF3FF] p-8 text-center transition-all duration-400 transform hover:scale-102 hover:-translate-y-3 relative overflow-hidden group hover:cursor-default`}>
             <div className={`mx-auto mb-6 h-22 w-22 rounded-full flex items-center justify-center bg-[#CEF3FF] transition-all duration-300`}>
                 <Icon className={`h-12 w-12 text-gray-700 ${color}`} />
             </div>

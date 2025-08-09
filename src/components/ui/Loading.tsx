@@ -1,5 +1,6 @@
 import React from 'react';
 import './Loading.css';
+import logo from "../../assets/logo.png"
 
 const Loading: React.FC = () => {
   return (
@@ -19,7 +20,7 @@ const Loading: React.FC = () => {
       </div>
       <div className="marine-logo-container">
         <div className="marine-logo-glow"></div>
-        <img src="/logo.png" alt="Company Logo" className="marine-logo" />
+        <img src={logo} alt="Company Logo" className="marine-logo" />
       </div>
     </div>
   );

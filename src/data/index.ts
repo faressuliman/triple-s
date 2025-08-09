@@ -31,24 +31,21 @@ export const services: IServices[] = [
     {
         icon: Cog,
         title: "Efficient in Technicalities",
-        description:
-            "Advanced technical expertise with cutting-edge marine technology and engineering solutions for optimal performance.",
+        description: "Advanced technical expertise with cutting-edge marine technology and engineering solutions for optimal performance.",
         color: "text-primary",
     },
 
     {
         icon: Palette,
         title: "Flexible in Customization",
-        description:
-            "Tailored solutions designed to meet your specific marine requirements with adaptable and personalized approaches.",
+        description: "Tailored solutions designed to meet your specific marine requirements with adaptable and personalized approaches.",
         color: "text-accent",
     },
 
     {
         icon: Clock,
         title: "Deliver On Time",
-        description:
-            "Reliable project delivery with strict adherence to timelines, ensuring your marine operations stay on schedule.",
+        description: "Reliable project delivery with strict adherence to timelines, ensuring your marine operations stay on schedule.",
         color: "text-primary",
     },
 ];

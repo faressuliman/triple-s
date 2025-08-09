@@ -1,11 +1,11 @@
 import { Linkedin } from "lucide-react"
-import logo from "../../public/logo.png"
+import logo from "../assets/logo.png"
 import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
     <div className="bg-[#07254B] text-[#d4d4d4] md:px-12 px-6">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col md:grid md:grid-cols-4 gap-8">
           
           {/* Company Info */}
