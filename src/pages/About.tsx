@@ -11,8 +11,8 @@ const About = () => {
         {/* Background */}
         <motion.div
           className="absolute inset-0"
-          initial={{ opacity: 0, scale: 1.05 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ scale: 1.05 }}
+          animate={{ scale: 1 }}
           transition={{ duration: 0.8 }}
         >
           <img src={sea} alt="Waves" className="w-full h-full" />
@@ -22,8 +22,8 @@ const About = () => {
         <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-8">
           <motion.div
             className="flex flex-col max-w-2xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
             <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap mb-8">
@@ -44,8 +44,8 @@ const About = () => {
 
           <motion.div
             className="flex flex-row gap-3 items-center"
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ y: -20 }}
+            whileInView={{ y: 0 }}
             viewport={{ once: true, amount: 0.6 }}
             transition={{ duration: 0.6 }}
           >
@@ -58,8 +58,8 @@ const About = () => {
             />
             <motion.h2
               className="text-[#0A3251] font-semibold text-sm"
-              initial={{ opacity: 0, y: -12 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ y: -12 }}
+              whileInView={{ y: 0 }}
               viewport={{ once: true, amount: 0.6 }}
               transition={{ duration: 0.5, delay: 0.15 }}
             >
@@ -69,8 +69,8 @@ const About = () => {
 
           <motion.div
             className="text-3xl md:text-4xl lg:text-5xl font-bold"
-            initial={{ opacity: 0, y: -14 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ y: -14 }}
+            whileInView={{ y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
@@ -80,8 +80,8 @@ const About = () => {
 
           <motion.p
             className="text-[#4B6F9B] text-lg"
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ x: 40 }}
+            whileInView={{ x: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6 }}
           >
@@ -90,8 +90,8 @@ const About = () => {
 
           <motion.p
             className="text-[#4B6F9B] text-lg"
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ x: 40 }}
+            whileInView={{ x: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
@@ -125,8 +125,8 @@ const About = () => {
         {/* Mission and Vision */}
         <motion.div
           className="col-span-2 max-w-3xl h-full rounded-xl border border-blue-500 shadow-xl"
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 24 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.6 }}
         >
@@ -171,8 +171,8 @@ const About = () => {
         <div className="lg:col-span-4 col-span-1 space-y-8 max-w-screen-3xl w-full">
           <motion.div
             className="flex flex-row gap-3 items-center"
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ y: -20 }}
+            whileInView={{ y: 0 }}
             viewport={{ once: true, amount: 0.6 }}
             transition={{ duration: 0.6 }}
           >
@@ -185,8 +185,8 @@ const About = () => {
             />
             <motion.h2
               className="text-[#0A3251] font-semibold text-sm"
-              initial={{ opacity: 0, y: -12 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ y: -12 }}
+              whileInView={{ y: 0 }}
               viewport={{ once: true, amount: 0.6 }}
               transition={{ duration: 0.5, delay: 0.15 }}
             >
@@ -196,8 +196,8 @@ const About = () => {
 
           <motion.div
             className="text-3xl md:text-4xl lg:text-5xl font-bold"
-            initial={{ opacity: 0, y: -14 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ y: -14 }}
+            whileInView={{ y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
@@ -207,8 +207,8 @@ const About = () => {
 
           <motion.p
             className="text-[#4B6F9B] text-lg"
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ x: 40 }}
+            whileInView={{ x: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6 }}
           >
@@ -217,8 +217,8 @@ const About = () => {
 
           <motion.p
             className="text-[#4B6F9B] text-lg"
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ x: 40 }}
+            whileInView={{ x: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
@@ -233,8 +233,8 @@ const About = () => {
         <div className="space-y-8">
           <motion.div
             className="flex flex-row gap-3 items-center"
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ y: -20 }}
+            whileInView={{ y: 0 }}
             viewport={{ once: true, amount: 0.6 }}
             transition={{ duration: 0.6 }}
           >
@@ -247,8 +247,8 @@ const About = () => {
             />
             <motion.h2
               className="text-[#0A3251] font-semibold text-sm"
-              initial={{ opacity: 0, y: -12 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ y: -12 }}
+              whileInView={{ y: 0 }}
               viewport={{ once: true, amount: 0.6 }}
               transition={{ duration: 0.5, delay: 0.15 }}
             >
@@ -258,8 +258,8 @@ const About = () => {
 
           <motion.div
             className="text-3xl md:text-4xl lg:text-5xl font-bold"
-            initial={{ opacity: 0, y: -14 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ y: -14 }}
+            whileInView={{ y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
@@ -269,8 +269,8 @@ const About = () => {
 
           <motion.p
             className="text-[#4B6F9B] text-lg"
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ x: 40 }}
+            whileInView={{ x: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6 }}
           >
@@ -281,8 +281,8 @@ const About = () => {
         {/* Logo Section */}
         <motion.div
           className="flex justify-center items-center group"
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 12 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
