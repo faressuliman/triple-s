@@ -7,7 +7,7 @@ import "../index.css"
 const About = () => {
   return (
     <div>
-      <div className="relative h-[48vh] flex items-center overflow-hidden">
+      <div className="relative h-[56vh] flex items-center overflow-hidden">
         {/* Background */}
         <motion.div
           className="absolute inset-0"
@@ -19,7 +19,7 @@ const About = () => {
         </motion.div>
 
         {/* Hero */}
-        <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-8">
+        <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-16 md:pt-8">
           <motion.div
             className="flex flex-col max-w-2xl"
             initial={{ y: 20 }}

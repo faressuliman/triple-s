@@ -11,7 +11,7 @@ const Navbar = () => {
         {/* Logo */}
         <NavLink to="/" className="flex items-center md:space-x-3 space-x-1 rtl:space-x-reverse no-highlight">
           <img src={logo} className="h-14 object-contain" alt="Triple S Logo" />
-          <span className="self-center md:text-2xl text-lg font-semibold whitespace-nowrap text-white">
+          <span className="self-center md:text-3xl text-lg font-semibold whitespace-nowrap text-white">
             Triple S Marine Services
           </span>
         </NavLink>
