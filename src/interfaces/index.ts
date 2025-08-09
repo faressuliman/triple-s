@@ -11,3 +11,9 @@ export interface IServices {
     description: string,
     color: string
 }
+
+export interface ISteps {
+    Icon: React.ElementType,
+    title: string,
+    description: string
+}

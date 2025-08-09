@@ -37,7 +37,7 @@ const About = () => {
 
       </div>
 
-      <section className="mx-auto grid lg:grid-cols-4 md:grid-cols-1 grid-cols-1 items-stretch pt-32 pb-24 bg-[#FAFBFB] lg:px-16 px-8 gap-8">
+      <section className="mx-auto grid lg:grid-cols-4 md:grid-cols-1 grid-cols-1 items-stretch pt-32 pb-24 bg-[#F8FDFF] lg:px-16 px-8 gap-8">
 
         {/* Story Section */}
         <div className="col-span-2 space-y-8 max-w-3xl">
@@ -167,7 +167,7 @@ const About = () => {
       </section>
 
       {/* Foundation Section*/}
-      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#FAFBFB] grid lg:grid-cols-4 grid-cols-1 gap-8">
+      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#F8FDFF] grid lg:grid-cols-4 grid-cols-1 gap-8">
         <div className="lg:col-span-4 col-span-1 space-y-8 max-w-screen-3xl w-full">
           <motion.div
             className="flex flex-row gap-3 items-center"
@@ -228,7 +228,7 @@ const About = () => {
       </section>
 
       {/* Brand/Logo section */}
-      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#FAFBFB] grid lg:grid-cols-2 grid-cols-1 gap-12 items-center">
+      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#F8FDFF] grid lg:grid-cols-2 grid-cols-1 gap-12 items-center">
         {/* Text Section */}
         <div className="space-y-8">
           <motion.div

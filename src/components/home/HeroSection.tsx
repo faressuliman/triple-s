@@ -24,7 +24,7 @@ const HeroSection = () => {
           className="flex flex-col max-w-2xl"
           initial={{ opacity: 0.1 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1 }}
         >
           <h1
             className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap mb-8"
