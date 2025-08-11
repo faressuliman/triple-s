@@ -75,7 +75,7 @@ const ImageSlideShow = () => {
 
         {/* Navigation Buttons */}
         <motion.button
-          className="cursor-pointer absolute left-8 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 text-white rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
+          className="cursor-pointer absolute left-5 md:left-8 top-1/2 -translate-y-1/2 md:w-10 md:h-10 w-7 h-7 bg-white/20 text-white rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
           onClick={prevSlide}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
@@ -83,7 +83,7 @@ const ImageSlideShow = () => {
           <ChevronLeft size={24} />
         </motion.button>
         <motion.button
-          className="cursor-pointer absolute right-8 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 text-white rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
+          className="cursor-pointer absolute right-5 md:right-8 top-1/2 -translate-y-1/2 md:w-10 md:h-10 w-7 h-7 bg-white/24.5 text-white rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
           onClick={nextSlide}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
