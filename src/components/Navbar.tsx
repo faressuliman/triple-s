@@ -60,7 +60,7 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 className="block py-2 px-2 text-gray-300 normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-300"
-                onClick={() => setIsOpen(prev => !prev)}
+                onClick={() => setIsOpen(false)}
               >
                 Home
               </NavLink>
@@ -69,7 +69,7 @@ const Navbar = () => {
               <NavLink
                 to="/about"
                 className="block py-2 px-2 text-gray-300 normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-300"
-                onClick={() => setIsOpen(prev => !prev)}
+                onClick={() => setIsOpen(false)}
               >
                 About Us
               </NavLink>
@@ -78,7 +78,7 @@ const Navbar = () => {
               <NavLink
                 to="/contact"
                 className="block py-2 px-2 text-gray-300 normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-300"
-                onClick={() => setIsOpen(prev => !prev)}
+                onClick={() => setIsOpen(false)}
               >
                 Contact
               </NavLink>
