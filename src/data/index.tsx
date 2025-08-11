@@ -1,8 +1,8 @@
-import type { ISlideShow, IServices, ISteps } from "../interfaces";
+import type { ISlideShow, IServices, ISteps, IGetInTouch } from "../interfaces";
 import boat1 from "../assets/boat-1.jpg"
 import equipment1 from "../assets/equipment-1.jpg"
 import oceanWaves from "../assets/ocean-waves.jpg"
-import { Cog, Palette, Clock, Target, Wrench, Ship, ShieldCheck } from "lucide-react";
+import { Cog, Palette, Clock, Target, Wrench, Ship, ShieldCheck, MapPin, Phone, Mail } from "lucide-react";
 
 export const slideShow: ISlideShow[] = [
     {
@@ -75,3 +75,30 @@ export const steps: ISteps[] = [
         Icon: ShieldCheck,
     },
 ];
+
+export const GetInTouch: IGetInTouch[] = [
+    {
+        Icon: MapPin,
+        title: "Address",
+        description: "Unknown for now"
+    },
+
+    {
+        Icon: Phone,
+        title: "Phone",
+        description: "Unknown for now"
+    },
+
+    {
+        Icon: Mail,
+        title: "Email",
+        description: "info@triple-s.com"
+    },
+
+    {
+        Icon: Clock,
+        title: "Business Hours",
+        description: "Unknown for now"
+    },
+
+]

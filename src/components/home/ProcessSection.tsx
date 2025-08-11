@@ -2,6 +2,7 @@ import { steps } from "../../data";
 import { motion } from "framer-motion";
 
 const ProcessSection = () => {
+
   const containerVariants = {
     hidden: { opacity: 1 },
     show: {
@@ -14,6 +15,30 @@ const ProcessSection = () => {
     hidden: { opacity: 0, y: 24, scale: 0.96 },
     show: { opacity: 1, y: 0, scale: 1 },
   } as const;
+
+  const renderProcesses = steps.map(({ title, description, Icon }) => (
+    <motion.div
+      key={title}
+      variants={cardVariants}
+      className="relative rounded-xl border border-[#CEF3FF] bg-white p-6 transition-colors duration-300 shadow-lg hover:shadow-indigo-300 hover:shadow-xl hover:cursor-default"
+      whileHover={{ y: -6, scale: 1.01 }}
+      whileTap={{ scale: 0.98 }}
+    >
+      <div className="flex items-center gap-3 mb-4">
+        <motion.div
+          className="h-10 w-10 rounded-lg bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10 flex items-center justify-center"
+          initial={{ scale: 0.9, rotate: -3 }}
+          whileInView={{ scale: 1, rotate: 0 }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true, amount: 0.6 }}
+        >
+          <Icon className="text-[#0A3251]" />
+        </motion.div>
+        <h3 className="text-lg font-semibold text-[#07254B]">{title}</h3>
+      </div>
+      <p className="text-[#4B6F9B] leading-relaxed">{description}</p>
+    </motion.div>
+  ))
 
   return (
     <section className="py-16 bg-[#F8FDFF]">
@@ -48,29 +73,7 @@ const ProcessSection = () => {
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}
           >
-            {steps.map(({ title, description, Icon }) => (
-              <motion.div
-                key={title}
-                variants={cardVariants}
-                className="relative rounded-xl border border-[#CEF3FF] bg-white p-6 transition-colors duration-300 shadow-lg hover:shadow-indigo-300 hover:shadow-xl hover:cursor-default"
-                whileHover={{ y: -6, scale: 1.01 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <motion.div
-                    className="h-10 w-10 rounded-lg bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10 flex items-center justify-center"
-                    initial={{ scale: 0.9, rotate: -3 }}
-                    whileInView={{ scale: 1, rotate: 0 }}
-                    transition={{ duration: 0.4 }}
-                    viewport={{ once: true, amount: 0.6 }}
-                  >
-                    <Icon className="text-[#0A3251]" />
-                  </motion.div>
-                  <h3 className="text-lg font-semibold text-[#07254B]">{title}</h3>
-                </div>
-                <p className="text-[#4B6F9B] leading-relaxed">{description}</p>
-              </motion.div>
-            ))}
+            {renderProcesses}
           </motion.div>
         </div>
       </div>

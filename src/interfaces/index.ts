@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export interface ISlideShow {
     id: number,
     image: string,
@@ -16,4 +18,10 @@ export interface ISteps {
     Icon: React.ElementType,
     title: string,
     description: string
+}
+
+export interface IGetInTouch {
+    Icon: React.ElementType,
+    title: string,
+    description: ReactNode
 }

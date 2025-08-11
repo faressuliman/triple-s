@@ -7,7 +7,8 @@ import "../index.css"
 const About = () => {
   return (
     <div>
-      <div className="relative h-[56vh] flex items-center overflow-hidden">
+      {/*Hero Section*/}
+      <div className="relative md:h-[48vh] h-[32vh] flex items-center overflow-hidden">
         {/* Background */}
         <motion.div
           className="absolute inset-0"
@@ -26,10 +27,10 @@ const About = () => {
             animate={{ y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap mb-8">
+            <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap mb-6">
               Your Partner in <span className="text-[#38d49c]">Oceanic</span> Innovation
             </h1>
-            <p className="md:text-xl text-lg text-[#f0f0f0] mb-8">
+            <p className="md:text-xl text-lg text-[#f0f0f0]">
               At Triple S, we deliver smart, end-to-end marine solutions that drive performance, safety, and sustainability.
             </p>
           </motion.div>
@@ -37,6 +38,7 @@ const About = () => {
 
       </div>
 
+      {/*Main Content Section*/}
       <section className="mx-auto grid lg:grid-cols-4 md:grid-cols-1 grid-cols-1 items-stretch pt-32 pb-24 bg-[#F8FDFF] lg:px-16 px-8 gap-8">
 
         {/* Story Section */}
@@ -124,7 +126,7 @@ const About = () => {
 
         {/* Mission and Vision */}
         <motion.div
-          className="col-span-2 max-w-3xl h-full rounded-xl border border-blue-500 shadow-xl"
+          className="col-span-2 max-w-3xl h-full rounded-xl shadow-lg hover:shadow-xl shadow-indigo-300 border border-[#CEF3FF]"
           initial={{ y: 24 }}
           whileInView={{ y: 0 }}
           viewport={{ once: true, amount: 0.25 }}

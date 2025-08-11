@@ -9,15 +9,6 @@
     font-weight: bolder;
 }
 
-/* Animated cyan/blue glowing border utility */
-@keyframes borderGlowGradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Wrap your content with this class, and then an inner container with rounded-[inherit] + bg-white */
-
 @media (max-width: 768px) {
     .active {
         background-color: #09385e;

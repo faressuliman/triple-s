@@ -1,5 +1,4 @@
-import { Linkedin } from "lucide-react"
-import logo from "../assets/logo.png"
+import { Linkedin, Sailboat } from "lucide-react"
 import { Link } from "react-router-dom"
 
 const Footer = () => {
@@ -10,15 +9,15 @@ const Footer = () => {
           
           {/* Company Info */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <img src={logo} className="h-8" alt="Triple S Logo" />
+            <div className="flex items-center max-w-md space-x-2 mb-4">
+              <Sailboat />
               <span className="text-xl font-bold text-white">Triple S Marine Services</span>
             </div>
             <p className="text-[#d4d4d4] mb-4 max-w-md">
               Your trusted partner in the marine industry. We provide comprehensive
               solutions for all your maritime needs with commitment and excellence.
             </p>
-            <div className="flex space-x-4">
+            <div>
               <a
                 href="https://linkedin.com"
                 target="_blank"

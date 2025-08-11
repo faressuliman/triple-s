@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <div className="relative h-[88vh] flex items-center overflow-hidden">
+    <div className="relative md:h-[88vh] h-[80vh] flex items-center overflow-hidden">
       {/* Background */}
       <section className="absolute inset-0">
         <video

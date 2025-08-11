@@ -10,8 +10,8 @@ const Navbar = () => {
       <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto lg:px-16 px-4 py-4">
         {/* Logo */}
         <NavLink to="/" className="flex items-center md:space-x-3 space-x-1 rtl:space-x-reverse no-highlight">
-          <img src={logo} className="h-14 object-contain" alt="Triple S Logo" />
-          <span className="self-center md:text-3xl text-lg font-semibold whitespace-nowrap text-white">
+          <img src={logo} className="h-14" alt="Triple S Logo" />
+          <span className="self-center md:text-2xl text-lg font-semibold whitespace-nowrap text-white">
             Triple S Marine Services
           </span>
         </NavLink>
@@ -60,6 +60,7 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 className="block py-2 px-2 text-gray-300 normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-300"
+                onClick={() => setIsOpen(prev => !prev)}
               >
                 Home
               </NavLink>
@@ -68,6 +69,7 @@ const Navbar = () => {
               <NavLink
                 to="/about"
                 className="block py-2 px-2 text-gray-300 normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-300"
+                onClick={() => setIsOpen(prev => !prev)}
               >
                 About Us
               </NavLink>
@@ -76,6 +78,7 @@ const Navbar = () => {
               <NavLink
                 to="/contact"
                 className="block py-2 px-2 text-gray-300 normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-white sm:py-1.5 duration-300"
+                onClick={() => setIsOpen(prev => !prev)}
               >
                 Contact
               </NavLink>
