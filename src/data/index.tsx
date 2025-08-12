@@ -2,7 +2,7 @@ import type { ISlideShow, IServices, ISteps, IGetInTouch } from "../interfaces";
 import boat1 from "../assets/boat-1.jpg"
 import equipment1 from "../assets/equipment-1.jpg"
 import oceanWaves from "../assets/ocean-waves.jpg"
-import { Cog, Palette, Clock, Target, Wrench, Ship, ShieldCheck, MapPin, Phone, Mail } from "lucide-react";
+import { Cog, Palette, Clock, Target, Wrench, Ship, ShieldCheck, MapPin, Mail } from "lucide-react";
 
 export const slideShow: ISlideShow[] = [
     {
@@ -80,19 +80,18 @@ export const GetInTouch: IGetInTouch[] = [
     {
         Icon: MapPin,
         title: "Address",
-        description: "Unknown for now"
-    },
-
-    {
-        Icon: Phone,
-        title: "Phone",
-        description: "Unknown for now"
+        description: (
+            <>
+                FDBC2317 Compass Building, Al Shohada Rd,
+                AL Hamra Industrial Zone-FZ, RAK, UAE
+            </>
+        )
     },
 
     {
         Icon: Mail,
         title: "Email",
-        description: "info@triple-s.com"
+        description: "info@sss-ms.net"
     },
 
     {

@@ -101,26 +101,32 @@ const About = () => {
           </motion.p>
 
           {/* Icons and Text */}
-          <div className="flex md:flex-row flex-col md:space-x-24 md:space-y-0 space-y-8 mt-12">
-            <div className="flex flex-row space-x-2.5 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+            <div className="grid grid-cols-[auto_1fr] items-center gap-4">
               <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gray-200">
                 <Award className="h-6 w-6 text-[#0A3251]" />
               </div>
-              <div className="">
+              <div>
                 <h3 className="font-semibold text-[#0A3251] mb-1">Industry Recognition</h3>
-                <p className="text-sm text-[#4B6F9B]">Multiple awards for innovation and excellence</p>
+                <p className="text-sm text-[#4B6F9B]">
+                  Multiple awards for innovation and excellence
+                </p>
               </div>
             </div>
-            <div className="flex flex-row space-x-2.5 items-center">
+
+            <div className="grid grid-cols-[auto_1fr] items-center gap-4 mb-5">
               <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gray-200">
                 <ShieldHalf className="h-6 w-6 text-[#0A3251]" />
               </div>
-              <div className="">
+              <div>
                 <h3 className="font-semibold text-[#0A3251] mb-1">Expert Team</h3>
-                <p className="text-sm text-[#4B6F9B]">World-class professionals driving innovation</p>
+                <p className="text-sm text-[#4B6F9B]">
+                  World-class professionals driving innovation
+                </p>
               </div>
             </div>
           </div>
+
 
         </div>
 

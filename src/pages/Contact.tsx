@@ -8,10 +8,11 @@ import ErrorMessage from "../components/ui/ErrorMessage"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { contactSchema } from "../validation"
 import Textarea from "../components/ui/TextArea"
+import Map from "../components/ui/Map"
 
 
 const Contact = () => {
-  {/* useForm */}
+  {/* useForm */ }
   const {
     register,
     handleSubmit,
@@ -20,14 +21,14 @@ const Contact = () => {
 
   const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data)
 
-  {/* RENDER - GET IN TOUCH */}
+  {/* RENDER - GET IN TOUCH */ }
   const renderGetInTouch = GetInTouch.map(({ Icon, title, description }, index) => (
-    <div key={index} className="flex flex-col justify-between gap-8">
-      <div className="flex items-start space-x-6">
-        <div className="w-12 h-12 rounded-full bg-[#E6E9ED] flex items-center justify-center">
-          <Icon className="h-6 w-6 text-[#07254B]" />
+    <div key={index} className="flex flex-col justify-between gap-10">
+      <div className="grid grid-cols-5">
+        <div className="w-12 h-12 px-3 py-3 rounded-full bg-[#E6E9ED] col-span-1">
+          <Icon className=" text-[#07254B]" />
         </div>
-        <div>
+        <div className="col-span-4">
           <h3 className="text-lg font-semibold text-[#07254B] mb-1">{title}</h3>
           <p className="text-[#5577A0] text-wrap">{description}</p>
         </div>
@@ -69,47 +70,54 @@ const Contact = () => {
       {/*Main Content Section*/}
       <section className="relative z-10 bg-[#F8FDFF]">
         {/* Contact Form */}
-        <div className="container mx-auto grid lg:grid-cols-3 grid-cols-1 pt-24 pb-24 lg:px-16 px-8 lg:gap-32 gap-8">
+        <div className="container mx-auto grid lg:grid-cols-3 grid-cols-1 pt-24 pb-24 lg:px-16 px-8 lg:gap-32 gap-24">
           <div className="md:col-span-2 rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8">
-          <h2 className="text-3xl font-bold text-[#07254B] mb-8">Send us a message!</h2>
-          <form onSubmit={(handleSubmit(onSubmit))} className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="md:space-x-6">
-                <Input placeholder="Full Name" {...register("full_name")} />
-                <ErrorMessage msg={errors?.full_name?.message} />
+            <h2 className="text-3xl font-bold text-[#07254B] mb-8">Send us a message!</h2>
+            <form onSubmit={(handleSubmit(onSubmit))} className="space-y-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="md:space-x-6">
+                  <Input placeholder="Full Name" {...register("full_name")} />
+                  <ErrorMessage msg={errors?.full_name?.message} />
+                </div>
+                <div className="md:space-x-6">
+                  <Input placeholder="Company Name" {...register("company_name")} />
+                  <ErrorMessage msg={errors?.company_name?.message} />
+                </div>
               </div>
-              <div className="md:space-x-6">
-                <Input placeholder="Company Name" {...register("company_name")} />
-                <ErrorMessage msg={errors?.company_name?.message} />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <Input placeholder="Email Address" {...register("email")} />
+                  <ErrorMessage msg={errors?.email?.message} />
+                </div>
+                <div>
+                  <Input placeholder="Phone" {...register("phone")} />
+                  <ErrorMessage msg={errors?.phone?.message} />
+                </div>
               </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <Input placeholder="Email Address" {...register("email")} />
-                <ErrorMessage msg={errors?.email?.message} />
+              <div className="grid grid-cols-1">
+                <Textarea placeholder="Write a message..." {...register("message")} />
+                <ErrorMessage msg={errors?.message?.message} />
               </div>
-              <div>
-                <Input placeholder="Phone" {...register("phone")} />
-                <ErrorMessage msg={errors?.phone?.message} />
+              <div className="grid grid-cols-1 gap-8">
+                <Button type="submit" className="bg-[#18375f] w-full hover:bg-[#284975]">Submit</Button>
               </div>
+            </form>
+          </div>
+          {/* Get In Touch */}
+          <div className="rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8">
+            <h1 className="text-center text-3xl mb-10 font-bold text-[#07254B]">Get In Touch</h1>
+            <div className="flex flex-col justify-between gap-12">
+              {renderGetInTouch}
             </div>
-            <div className="grid grid-cols-1">
-              <Textarea placeholder="Write a message..." {...register("message")}/>
-              <ErrorMessage msg={errors?.message?.message} />
-            </div>
-            <div className="grid grid-cols-1 gap-8">
-              <Button type="submit" className="bg-[#18375f] w-full hover:bg-[#284975]">Submit</Button>
-            </div>
-          </form>
-        </div>
-        {/* Get In Touch */}
-        <div className="rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8">
-          <h1 className="text-center text-3xl mb-6 font-bold text-[#07254B]">Get In Touch</h1>
-          <div className="flex flex-col justify-between gap-12">
-            {renderGetInTouch}
           </div>
         </div>
+        {/* Map */}
+        <div className="container mx-auto lg:px-16 px-8 mb-24">
+          <div className="rounded-xl shadow-xl shadow-indigo-300 border-4 border-[#5a92b3] overflow-hidden">
+            <Map />
+          </div>
         </div>
+
       </section>
     </div>
   )
