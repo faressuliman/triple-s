@@ -1,4 +1,6 @@
 import type { ReactNode } from "react";
+import type { contactSchema } from "../validation";
+import type z from "zod";
 
 export interface ISlideShow {
     id: number,
@@ -25,3 +27,5 @@ export interface IGetInTouch {
     title: string,
     description: ReactNode
 }
+
+export type IFormInput = z.infer<typeof contactSchema>;

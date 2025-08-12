@@ -126,7 +126,7 @@ const About = () => {
 
         {/* Mission and Vision */}
         <motion.div
-          className="col-span-2 max-w-3xl h-full rounded-xl shadow-lg hover:shadow-xl shadow-indigo-300 border border-[#CEF3FF]"
+          className="col-span-2 max-w-3xl h-full rounded-xl shadow-lg shadow-indigo-300 border border-[#CEF3FF]"
           initial={{ y: 24 }}
           whileInView={{ y: 0 }}
           viewport={{ once: true, amount: 0.25 }}
@@ -141,7 +141,7 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-semibold text-[#0A3251] mb-2">Mission</h3>
-                  <p className="text-[#4B6F9B] leading-relaxed">
+                  <p className="text-[#4B6F9B]">
                     To be the most trusted and innovative partner in the marine industry, delivering superior solutions while maintaining the highest standards of safety and environmental responsibility.
                   </p>
                 </div>
@@ -157,7 +157,7 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-semibold text-[#0A3251] mb-2">Vision</h3>
-                  <p className="text-[#4B6F9B] leading-relaxed">
+                  <p className="text-[#4B6F9B]">
                     To shape the future of maritime operations through cutting-edge technology, sustainable practices, and unwavering commitment to excellence.
                   </p>
                 </div>
