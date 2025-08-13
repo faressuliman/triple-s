@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#07254B] md:bg-transparent border-white md:absolute md:inset-0 md:z-10">
+    <nav className="bg-[#07254B] md:bg-transparent md:absolute md:inset-0 md:z-10">
       <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto lg:px-16 px-4 py-4">
         {/* Logo */}
         <NavLink to="/" className="flex items-center md:space-x-3 space-x-1 rtl:space-x-reverse no-highlight">
@@ -52,7 +52,7 @@ const Navbar = () => {
           <ul className={`
             font-medium flex flex-col p-4 md:p-0 mt-4 border border-[#75afd8] rounded-lg 
             md:bg-transparent bg-[#07254B] md:flex-row md:space-x-8 rtl:space-x-reverse 
-            md:mt-0 md:border-0 
+            md:mt-0 md:border-0
             transform transition-all duration-300 ease-in-out 
             ${isOpen ? "translate-y-0" : "-translate-y-4"}
           `}>

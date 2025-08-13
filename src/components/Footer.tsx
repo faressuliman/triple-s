@@ -1,4 +1,4 @@
-import { Linkedin, Sailboat } from "lucide-react"
+import { Linkedin, Ship } from "lucide-react"
 import { Link } from "react-router-dom"
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center max-w-md space-x-2 mb-4">
-              <Sailboat />
+              <Ship />
               <span className="text-xl font-bold text-white">Triple S Marine Services</span>
             </div>
             <p className="text-[#d4d4d4] mb-4 max-w-md">
@@ -22,9 +22,9 @@ const Footer = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#d4d4d4] hover:text-[#38D49C] transition-colors duration-300"
+                className="inline-block"
               >
-                <Linkedin className="h-6 w-6" />
+                <Linkedin className="h-6 w-6 text-[#d4d4d4] hover:text-[#38D49C] transition-colors duration-300" />
               </a>
             </div>
           </div>

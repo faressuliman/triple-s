@@ -9,7 +9,7 @@ const ServicesSection = () => {
       key={index}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      transition={{ duration: 1.2, delay: index * 0.1 }}
       whileHover={{ y: -5 }}
       viewport={{ once: true }}
     >
@@ -29,7 +29,7 @@ const ServicesSection = () => {
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 1.2 }}
           viewport={{ once: true, amount: 0.3 }}
         >
           <h2 className="md:text-3xl text-2xl font-bold text-[#07254B] mb-4">
@@ -44,7 +44,7 @@ const ServicesSection = () => {
           className="grid gap-6 md:grid-cols-1 lg:grid-cols-3 grid-cols-1"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 1.2, delay: 0.2 }}
           viewport={{ once: true, amount: 0.2 }}
         >
           {renderServices}

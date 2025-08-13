@@ -28,9 +28,8 @@ const ImageSlideShow = () => {
         <motion.div 
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, delay: 0.1 }}
         >
           <h2 className="md:text-3xl text-2xl font-bold text-[#07254B] mb-4">
             Our Marine Excellence
@@ -45,9 +44,8 @@ const ImageSlideShow = () => {
       <motion.div 
         className="relative max-w-4xl mx-auto px-4"
         initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.2, delay: 0.5 }}
       >
         <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-ocean">
           {slideShow.map((slide, index) => (
