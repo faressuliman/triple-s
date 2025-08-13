@@ -186,7 +186,7 @@ const Contact = () => {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ type: "spring", stiffness: 80, damping: 25, duration: 1.2 }}
         >
-          <div className="rounded-xl shadow-xl shadow-indigo-300 border-4 border-[#5a92b3] overflow-hidden">
+          <div className="rounded-xl shadow-xl shadow-indigo-300 border-2 border-[#316cb9] overflow-hidden">
             <Map />
           </div>
         </motion.div>
