@@ -98,7 +98,7 @@ const About = () => {
           {/* Icons and Text */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             <div className="grid grid-cols-[auto_1fr] items-center gap-4">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#E6E9ED]">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10">
                 <Award className="h-6 w-6 text-[#07254B]" />
               </div>
               <div>
@@ -110,7 +110,7 @@ const About = () => {
             </div>
 
             <div className="grid grid-cols-[auto_1fr] items-center gap-4">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#E6E9ED]">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10">
                 <ShieldHalf className="h-6 w-6 text-[#07254B]" />
               </div>
               <div>
@@ -136,7 +136,7 @@ const About = () => {
             <div className="flex flex-col justify-between gap-8 h-full">
               {/* Mission */}
               <div className="flex items-start gap-5">
-                <div aria-hidden className="w-20 h-16 rounded-2xl flex items-center justify-center bg-[#E6E9ED] shadow-md">
+                <div aria-hidden className="w-20 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10 shadow-md">
                   <Target className="w-12 h-9 text-[#07254B]" />
                 </div>
                 <div>
@@ -152,7 +152,7 @@ const About = () => {
 
               {/* Vision */}
               <div className="flex items-start gap-5">
-                <div aria-hidden className="w-20 h-16 rounded-2xl flex items-center justify-center bg-[#E6E9ED] shadow-md">
+                <div aria-hidden className="w-20 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10 shadow-md">
                   <Waves className="w-9 h-9 text-[#07254B]" />
                 </div>
                 <div>

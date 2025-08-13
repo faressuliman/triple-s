@@ -37,7 +37,7 @@ const Contact = () => {
     >
       <div className="grid md:grid-cols-5 grid-cols-4">
         <motion.div 
-          className="w-12 h-12 px-3 py-3 rounded-full bg-[#E6E9ED] col-span-1"
+          className="w-12 h-12 px-3 py-3 rounded-full bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10 col-span-1"
           whileHover={{ scale: 1.1, rotate: 5 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
