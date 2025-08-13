@@ -97,7 +97,12 @@ export const GetInTouch: IGetInTouch[] = [
     {
         Icon: Clock,
         title: "Business Hours",
-        description: "Unknown for now"
+        description: (
+            <>
+                Monday to Friday, <br />8:00 AM - 5:00 PM <br />
+                Closed on Saturdays and Sundays
+            </>
+        )
     },
 
 ]

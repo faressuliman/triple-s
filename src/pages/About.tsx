@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div>
       {/*Hero Section*/}
-      <div className="relative md:h-[48vh] h-[32vh] flex items-center overflow-hidden">
+      <div className="relative h-[48vh] py-40 lg:py-0 flex items-center overflow-hidden">
         {/* Background */}
         <motion.div
           className="absolute inset-0"
@@ -19,7 +19,7 @@ const About = () => {
           <img src={sea} alt="Waves" className="w-full h-full" />
         </motion.div>
 
-        {/* Hero */}
+        {/* Hero Content */}
         <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-8 md:pt-8">
           <motion.div
             className="flex flex-col max-w-2xl"
@@ -235,7 +235,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Brand/Logo section */}
+      {/* Logo Section */}
       <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#F8FDFF] grid lg:grid-cols-2 grid-cols-1 gap-12 items-center">
         {/* Text Section */}
         <div className="space-y-8">
