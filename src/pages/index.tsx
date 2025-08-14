@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <>
       <HeroSection />
-      <ImageSlideShow />
       <ServicesSection />
+      <ImageSlideShow />
       <ProcessSection />
     </>
   );

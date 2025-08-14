@@ -23,13 +23,14 @@ const ImageSlideShow = () => {
   };
 
   return (
-    <div className="py-16 bg-[#F8FDFF]">
+    <section className="py-16 bg-[#F8FDFF]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.1 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <h2 className="md:text-3xl text-2xl font-bold text-[#07254B] mb-4">
             Our Marine Excellence
@@ -41,19 +42,19 @@ const ImageSlideShow = () => {
         </motion.div>
       </div>
 
-      <motion.div 
+      <motion.div
         className="relative max-w-4xl mx-auto px-4"
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.2, delay: 0.5 }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
-        <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-ocean">
+        <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-xl shadow-[#CEF3FF] border-[#8eddf7] border-1">
           {slideShow.map((slide, index) => (
             <div
               key={slide.id}
-              className={`absolute inset-0 transition-opacity duration-1000 ${
-                index === currentSlide ? "opacity-100" : "opacity-0"
-              }`}
+              className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100" : "opacity-0"
+                }`}
             >
               <img
                 src={slide.image}
@@ -92,11 +93,10 @@ const ImageSlideShow = () => {
         {/* Slide Indicators */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
           {slideShow.map((_, index) => (
-            <motion.button 
-              key={index} 
-              className={`cursor-pointer w-3 h-3 rounded-full transition-all ${
-                index === currentSlide ? "bg-green-500 scale-125" : "bg-white/50 hover:bg-white/70"
-              }`}
+            <motion.button
+              key={index}
+              className={`cursor-pointer w-3 h-3 rounded-full transition-all ${index === currentSlide ? "bg-green-500 scale-125" : "bg-white/50 hover:bg-white/70"
+                }`}
               onClick={() => setCurrentSlide(index)}
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}
@@ -104,7 +104,7 @@ const ImageSlideShow = () => {
           ))}
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

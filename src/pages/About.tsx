@@ -284,7 +284,7 @@ const About = () => {
 
         {/* Logo */}
         <motion.div
-          className="flex justify-center items-center group"
+          className="flex justify-center items-center"
           initial={{ y: 12 }}
           whileInView={{ y: 0 }}
           viewport={{ once: true, amount: 0.01 }}
@@ -293,7 +293,7 @@ const About = () => {
           <img
             src={logo}
             alt="Triple S Logo"
-            className="w-full max-w-lg object-contain transition-transform duration-500 group-hover:animate-spin"
+            className="w-full max-w-lg object-contain transition-transform duration-500 hover:animate-spin"
           />
         </motion.div>
       </section>

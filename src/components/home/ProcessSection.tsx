@@ -7,7 +7,7 @@ const ProcessSection = () => {
     hidden: { opacity: 1 },
     show: {
       opacity: 1,
-      transition: { staggerChildren: 0.2, delayChildren: 0.1 },
+      transition: { staggerChildren: 0.15, delayChildren: 0.05 },
     },
   } as const;
 
@@ -16,6 +16,7 @@ const ProcessSection = () => {
     show: { opacity: 1, y: 0, scale: 1 },
   } as const;
 
+  // RENDER
   const renderProcesses = steps.map(({ title, description, Icon }) => (
     <motion.div
       key={title}
@@ -30,7 +31,7 @@ const ProcessSection = () => {
           className="h-10 w-10 rounded-lg bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10 flex items-center justify-center"
           initial={{ scale: 0.9, rotate: -3 }}
           whileInView={{ scale: 1, rotate: 0 }}
-          transition={{ duration: 3}}
+          transition={{ duration: 2}}
           viewport={{ once: true, amount: 0.6 }}
         >
           <Icon className="text-[#0A3251]" />
@@ -48,7 +49,7 @@ const ProcessSection = () => {
           className="text-center mb-12"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true, amount: 0.5 }}
         >
           <h2 className="md:text-3xl text-2xl font-bold text-[#07254B] mb-3">How We Deliver</h2>
@@ -58,12 +59,12 @@ const ProcessSection = () => {
         </motion.div>
 
         <div className="relative">
-          {/* Connector line for md+ */}
+          {/* CONNECTOR LINE */}
           <motion.div
             className="hidden md:block absolute top-16 left-0 right-0 h-0.5 bg-gradient-to-r from-[#DCE8F5] via-[#B8D3EC] to-[#DCE8F5]"
             initial={{ scaleX: 0, originX: 0 }}
             whileInView={{ scaleX: 1 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
+            transition={{ duration: 1.0, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.4 }}
           />
 

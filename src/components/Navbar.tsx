@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 import logo from "../assets/logo.png"
 
 const Navbar = () => {
@@ -10,7 +11,19 @@ const Navbar = () => {
       <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto lg:px-16 px-4 py-4">
         {/* Logo */}
         <NavLink to="/" className="flex items-center md:space-x-3 space-x-1 rtl:space-x-reverse no-highlight">
-          <img src={logo} className="h-14" alt="Triple S Logo" />
+          <motion.img 
+            src={logo} 
+            className="h-14" 
+            alt="Triple S Logo"
+            animate={{ 
+              scale: [1, 1.1, 1],
+              rotate: [0, 5, -5, 0]
+            }}
+            transition={{
+              scale: { duration: 3, repeat: Infinity, ease: "easeInOut" },
+              rotate: { duration: 4, repeat: Infinity, ease: "easeInOut" }
+            }}
+          />
           <span className="self-center md:text-2xl text-lg font-semibold whitespace-nowrap text-white">
             Triple S Marine Services
           </span>

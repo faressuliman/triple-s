@@ -6,7 +6,6 @@
 
 .active {
     color: #38d49c;
-    font-weight: bolder;
 }
 
 @media (max-width: 768px) {
