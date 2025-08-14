@@ -61,7 +61,7 @@ const ProcessSection = () => {
         <div className="relative">
           {/* CONNECTOR LINE */}
           <motion.div
-            className="hidden md:block absolute top-16 left-0 right-0 h-0.5 bg-gradient-to-r from-[#DCE8F5] via-[#B8D3EC] to-[#DCE8F5]"
+            className="hidden lg:block absolute top-16 left-0 right-0 h-0.5 bg-gradient-to-r from-[#DCE8F5] via-[#B8D3EC] to-[#DCE8F5]"
             initial={{ scaleX: 0, originX: 0 }}
             whileInView={{ scaleX: 1 }}
             transition={{ duration: 1.0, ease: "easeOut" }}
@@ -69,7 +69,7 @@ const ProcessSection = () => {
           />
 
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-4 gap-6"
+            className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6"
             variants={containerVariants}
             initial="hidden"
             whileInView="show"

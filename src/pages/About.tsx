@@ -40,7 +40,7 @@ const About = () => {
       </div>
 
       {/*Main Content Section*/}
-      <section className="mx-auto grid lg:grid-cols-4 md:grid-cols-1 grid-cols-1 items-stretch pt-32 pb-24 bg-[#F8FDFF] lg:px-16 px-8 gap-8">
+      <section className="mx-auto grid lg:grid-cols-4  md:grid-cols-1 grid-cols-1 items-stretch pt-32 pb-24 bg-[#F8FDFF] lg:px-16 px-8 gap-8">
 
         {/* Story Section */}
         <div className="col-span-2 space-y-8 max-w-3xl">
