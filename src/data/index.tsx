@@ -83,7 +83,7 @@ export const GetInTouch: IGetInTouch[] = [
         description: (
             <>
                 FDBC2317 Compass Building, Al Shohada Rd,
-                AL Hamra Industrial Zone-FZ, RAK, UAE
+                AL Hamra Industrial Zone-FZ, RAK, United Arab Emirates
             </>
         )
     },

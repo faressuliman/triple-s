@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import sea from "../assets/sea.png"
-import { Award, ShieldHalf, Waves, Target } from "lucide-react";
+import { Award, ShieldHalf, Eye, Target } from "lucide-react";
 import logo from "../assets/logo.png";
 import "../index.css"
 
@@ -17,7 +17,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
         >
           <img src={sea} alt="Waves" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#09253b]/80 to-[#0e4d6d]/80"></div>
+          <div className="absolute inset-0"></div>
         </motion.div>
 
         {/* Hero Content */}
@@ -96,7 +96,7 @@ const About = () => {
           </motion.p>
 
           {/* Icons and Text */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 mb-8">
             <div className="grid grid-cols-[auto_1fr] items-center gap-4">
               <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10">
                 <Award className="h-6 w-6 text-[#07254B]" />
@@ -126,45 +126,47 @@ const About = () => {
         </div>
 
         {/* Mission and Vision */}
-        <motion.div
-          className="col-span-2 max-w-3xl h-full rounded-xl shadow-lg shadow-indigo-300 border border-[#CEF3FF]"
-          initial={{ y: 24 }}
-          animate={{ y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="rounded-xl bg-white p-6 md:py-10 md:px-8 h-full">
-            <div className="flex flex-col justify-between gap-8 h-full">
-              {/* Mission */}
-              <div className="flex items-start gap-5">
-                <div aria-hidden className="w-20 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10 shadow-md">
-                  <Target className="w-12 h-9 text-[#07254B]" />
+        <div className="p-[3px] col-span-2 max-w-3xl rounded-2xl bg-gradient-to-r from-[#054677] to-[#34CD97]">
+          <motion.div
+            className="h-full overflow-hidden"
+            initial={{ y: 24 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="rounded-xl bg-white p-6 md:py-10 md:px-8 h-full">
+              <div className="flex flex-col justify-between gap-8 h-full">
+                {/* Mission */}
+                <div className="flex items-start gap-5">
+                  <div aria-hidden className="w-20 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10 shadow-md">
+                    <Target className="w-12 h-9 text-[#07254B]" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-semibold text-[#0A3251] mb-2">Mission</h3>
+                    <p className="text-[#4B6F9B]">
+                      To be the most trusted and innovative partner in the marine industry, delivering superior solutions while maintaining the highest standards of safety and environmental responsibility.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-2xl font-semibold text-[#0A3251] mb-2">Mission</h3>
-                  <p className="text-[#4B6F9B]">
-                    To be the most trusted and innovative partner in the marine industry, delivering superior solutions while maintaining the highest standards of safety and environmental responsibility.
-                  </p>
-                </div>
-              </div>
 
-              {/* Divider */}
-              <div className="h-px bg-gray-300/80 mx-2 md:mx-4" />
+                {/* Divider */}
+                <div className="h-px bg-gray-300/80 mx-2 md:mx-4" />
 
-              {/* Vision */}
-              <div className="flex items-start gap-5">
-                <div aria-hidden className="w-20 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10 shadow-md">
-                  <Waves className="w-9 h-9 text-[#07254B]" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-semibold text-[#0A3251] mb-2">Vision</h3>
-                  <p className="text-[#4B6F9B]">
-                    To shape the future of maritime operations through cutting-edge technology, sustainable practices, and unwavering commitment to excellence.
-                  </p>
+                {/* Vision */}
+                <div className="flex items-start gap-5">
+                  <div aria-hidden className="w-20 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10 shadow-md">
+                    <Eye className="w-12 h-9 text-[#07254B]" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-semibold text-[#0A3251] mb-2">Vision</h3>
+                    <p className="text-[#4B6F9B]">
+                      To shape the future of maritime operations through cutting-edge technology, sustainable practices, and unwavering commitment to excellence.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
 
       </section>
 
