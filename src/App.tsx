@@ -2,6 +2,7 @@ import { RouterProvider } from 'react-router-dom'
 import router from './router'
 import { useState, useEffect } from 'react'
 import Loading from './components/ui/Loading';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
+      <Toaster />
     </>
   )
 }
