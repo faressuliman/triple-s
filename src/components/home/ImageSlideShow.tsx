@@ -78,6 +78,7 @@ const ImageSlideShow = () => {
           onClick={prevSlide}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
+          aria-label="Previous slide"
         >
           <ChevronLeft size={24} />
         </motion.button>
@@ -86,6 +87,7 @@ const ImageSlideShow = () => {
           onClick={nextSlide}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
+          aria-label="Next slide"
         >
           <ChevronRight size={24} />
         </motion.button>
@@ -100,6 +102,7 @@ const ImageSlideShow = () => {
               onClick={() => setCurrentSlide(index)}
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}
+              aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>

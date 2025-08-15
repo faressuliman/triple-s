@@ -55,7 +55,7 @@ const HeroSection = () => {
             </Link>
             <Link to="/about" className="w-full md:w-auto">
               <Button className="border-[#3c9776] hover:bg-white hover:border-white hover:text-black">
-                Learn More
+                Learn More About Us
               </Button>
             </Link>
           </motion.div>

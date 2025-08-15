@@ -3,8 +3,29 @@ import sea from "../assets/sea.png"
 import { Award, ShieldHalf, Eye, Target } from "lucide-react";
 import logo from "../assets/logo.png";
 import "../index.css"
+import { useState, useEffect } from "react";
+import Loading from "../components/ui/Loading";
 
 const About = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Show loading for 2 seconds to allow images to load
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-[#F8FDFF]">
+        <Loading />
+      </div>
+    );
+  }
+
   return (
     <div>
       {/*Hero Section*/}
