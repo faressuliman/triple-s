@@ -60,6 +60,8 @@ const ImageSlideShow = () => {
                 src={slide.image}
                 alt={slide.title}
                 className="w-full h-full object-cover"
+                loading={index === 0 ? "eager" : "lazy"}
+                fetchPriority={index === 0 ? "high" : "auto"}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-6 left-6 p-6 md:p-8 text-white">

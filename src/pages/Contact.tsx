@@ -8,10 +8,12 @@ import ErrorMessage from "../components/ui/ErrorMessage"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { contactSchema } from "../validation"
 import Textarea from "../components/ui/TextArea"
-import Map from "../components/ui/Map"
-import { useState } from "react"
+import { useState, lazy, Suspense } from "react"
 import emailjs from 'emailjs-com';
 import toast from "react-hot-toast"
+
+// Lazy load the Map component to reduce initial bundle size
+const LazyMap = lazy(() => import("../components/ui/Map"))
 
 const Contact = () => {
   // useForm
@@ -85,7 +87,7 @@ const Contact = () => {
           <Icon className=" text-[#07254B]" />
         </motion.div>
         <div className="md:col-span-4 col-span-3">
-          <h3 className="text-lg font-semibold text-[#07254B] mb-1">{title}</h3>
+          <h2 className="text-lg font-semibold text-[#07254B] mb-1">{title}</h2>
           <p className="text-[#5577A0] text-wrap">{description}</p>
         </div>
       </div>
@@ -230,7 +232,9 @@ const Contact = () => {
           transition={{ type: "spring", stiffness: 80, damping: 25, duration: 1.2 }}
         >
           <div className="rounded-xl shadow-xl shadow-indigo-300 border-2 border-[#316cb9] overflow-hidden">
-            <Map />
+            <Suspense fallback={<div className="h-[450px] bg-gray-200 animate-pulse flex items-center justify-center">Loading map...</div>}>
+              <LazyMap />
+            </Suspense>
           </div>
         </motion.div>
 

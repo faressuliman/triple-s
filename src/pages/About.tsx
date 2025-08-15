@@ -3,28 +3,8 @@ import sea from "../assets/sea.png"
 import { Award, ShieldHalf, Eye, Target } from "lucide-react";
 import logo from "../assets/logo.png";
 import "../index.css"
-import { useState, useEffect } from "react";
-import Loading from "../components/ui/Loading";
 
 const About = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Show loading for 2 seconds to allow images to load
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-[#F8FDFF]">
-        <Loading />
-      </div>
-    );
-  }
 
   return (
     <div>
@@ -37,7 +17,15 @@ const About = () => {
           animate={{ scale: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <img src={sea} alt="Waves" className="w-full h-full object-cover" />
+          <img 
+            src={sea} 
+            alt="Waves" 
+            className="w-full h-full object-cover" 
+            fetchPriority="high"
+            loading="eager"
+            width="1920"
+            height="1080"
+          />
           <div className="absolute inset-0"></div>
         </motion.div>
 
@@ -315,6 +303,10 @@ const About = () => {
             src={logo}
             alt="Triple S Logo"
             className="w-full max-w-lg object-contain transition-transform duration-500 hover:animate-spin"
+            loading="lazy"
+            fetchPriority="auto"
+            width="400"
+            height="400"
           />
         </motion.div>
       </section>
