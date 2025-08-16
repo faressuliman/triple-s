@@ -203,7 +203,7 @@ const Contact = () => {
           </motion.div>
           {/* Get In Touch */}
           <motion.div
-            className="rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8 xl:col-span-1 md:mx-auto md:w-3/4 xl:w-auto"
+            className="rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8 xl:col-span-1 md:mx-auto md:w-3/5 xl:w-auto"
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
