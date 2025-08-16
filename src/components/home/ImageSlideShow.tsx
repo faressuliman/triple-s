@@ -25,17 +25,27 @@ const ImageSlideShow = () => {
   return (
     <section className="py-16 bg-[#F8FDFF]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Title - Animates on page load */}
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true, amount: 0.3 }}
         >
           <h2 className="md:text-3xl text-2xl font-bold text-[#07254B] mb-4">
             Our Marine Excellence
           </h2>
-          <p className="md:text-lg text-md max-w-2xl mx-auto text-[#5577A0]">
+        </motion.div>
+
+        {/* Description - Animates when in view */}
+        <motion.div
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          viewport={{ once: true, amount: 0.01 }}
+        >
+          <p className="md:text-lg text-base max-w-2xl mx-auto text-[#5577A0]">
             Discover our comprehensive range of marine services and equipment
             designed to meet the highest industry standards.
           </p>
@@ -49,7 +59,7 @@ const ImageSlideShow = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-xl shadow-[#CEF3FF] border-[#8eddf7] border-1">
+        <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-xl shadow-[#CEF3FF] border border-[#8eddf7]">
           {slideShow.map((slide, index) => (
             <div
               key={slide.id}

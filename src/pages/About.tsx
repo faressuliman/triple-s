@@ -1,10 +1,60 @@
 import { motion } from "framer-motion"
 import sea from "../assets/sea.png"
-import { Award, ShieldHalf, Eye, Target } from "lucide-react";
+import { Award, ShieldHalf } from "lucide-react";
 import logo from "../assets/logo.png";
+import ServiceCard from "../components/ui/ServiceCard";
+import { missionVision, storyTimeline } from "../data";
 import "../index.css"
 
 const About = () => {
+
+  // RENDERS
+  const renderMissionVision = missionVision.map((item, index) => (
+    <motion.div
+      key={item.title}
+      initial={{ y: 50, opacity: 0, scale: 0.95 }}
+      whileInView={{ y: 0, opacity: 1, scale: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.6, delay: index * 0.3, ease: "easeOut" }}
+    >
+      <ServiceCard {...item} />
+    </motion.div>
+  ));
+
+  const renderStory = storyTimeline.map((item, index) => (
+    <motion.div
+      key={item.badge}
+      className="relative flex items-start"
+      initial={{ opacity: 0, x: 20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.01 }}
+      transition={{ duration: 0.8, delay: (index + 1) * 0.2 }}
+    >
+      <div
+        className="absolute left-2 lg:left-6 top-2 w-4 h-4 bg-white border-2 rounded-full shadow-lg"
+        style={{ borderColor: item.color }}
+      ></div>
+      <div className="ml-12 lg:ml-20">
+        <div className="bg-white rounded-lg p-4 shadow-md border border-gray-100">
+          <div className="flex items-center gap-3 mb-2">
+            <span
+              className="text-sm font-bold px-3 py-1 rounded-full"
+              style={{
+                color: item.color,
+                backgroundColor: `${item.color}10`
+              }}
+            >
+              {item.badge}
+            </span>
+            <h3 className="text-lg font-semibold text-[#0A3251]">{item.title}</h3>
+          </div>
+          <p className="text-[#6789b3] text-sm leading-relaxed">
+            {item.description}
+          </p>
+        </div>
+      </div>
+    </motion.div>
+  ));
 
   return (
     <div>
@@ -17,10 +67,10 @@ const About = () => {
           animate={{ scale: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <img 
-            src={sea} 
-            alt="Waves" 
-            className="w-full h-full object-cover" 
+          <img
+            src={sea}
+            alt="Waves"
+            className="w-full h-full object-cover"
             fetchPriority="high"
             loading="eager"
             width="1920"
@@ -131,52 +181,59 @@ const About = () => {
             </div>
           </div>
 
-
         </div>
 
-        {/* Mission and Vision */}
-        <div className="p-[3px] col-span-2 max-w-3xl rounded-2xl bg-gradient-to-r from-[#054677] to-[#34CD97]">
+        {/* Modern Timeline */}
+        <div className="col-span-2 max-w-4xl mx-auto">
           <motion.div
-            className="h-full overflow-hidden"
+            className="relative"
             initial={{ y: 24 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="rounded-xl bg-white p-6 md:py-10 md:px-8 h-full">
-              <div className="flex flex-col justify-between gap-8 h-full">
-                {/* Mission */}
-                <div className="flex items-start gap-5">
-                  <div aria-hidden className="w-20 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10 shadow-md">
-                    <Target className="w-12 h-9 text-[#07254B]" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-[#0A3251] mb-2">Mission</h3>
-                    <p className="text-[#4B6F9B]">
-                      To be the most trusted and innovative partner in the marine industry, delivering superior solutions while maintaining the highest standards of safety and environmental responsibility.
-                    </p>
-                  </div>
-                </div>
+            {/* Vertical Line */}
+            <div className="absolute left-4 lg:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10"></div>
 
-                {/* Divider */}
-                <div className="h-px bg-gray-300/80 mx-2 md:mx-4" />
-
-                {/* Vision */}
-                <div className="flex items-start gap-5">
-                  <div aria-hidden className="w-20 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10 shadow-md">
-                    <Eye className="w-12 h-9 text-[#07254B]" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-[#0A3251] mb-2">Vision</h3>
-                    <p className="text-[#4B6F9B]">
-                      To shape the future of maritime operations through cutting-edge technology, sustainable practices, and unwavering commitment to excellence.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div className="space-y-6">
+              {renderStory}
             </div>
           </motion.div>
         </div>
 
+      </section>
+
+      {/* Mission and Vision Section */}
+      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#F8FDFF]">
+        <div className="max-w-screen-3xl mx-auto">
+          <motion.div
+            className="flex flex-row gap-3 items-center mb-12"
+            initial={{ y: -20 }}
+            whileInView={{ y: 0 }}
+            viewport={{ once: true, amount: 0.01 }}
+            transition={{ duration: 0.8 }}
+          >
+            <motion.div
+              className="w-2 rounded-full bg-gradient-to-b from-[#0A3251] to-[#34CD97]"
+              initial={{ height: 0 }}
+              whileInView={{ height: 48 }}
+              viewport={{ once: true, amount: 0.01 }}
+              transition={{ duration: 0.8 }}
+            />
+            <motion.h2
+              className="text-[#0A3251] font-semibold text-sm"
+              initial={{ y: -12 }}
+              whileInView={{ y: 0 }}
+              viewport={{ once: true, amount: 0.01 }}
+              transition={{ duration: 0.8, delay: 0.15 }}
+            >
+              OUR PURPOSE
+            </motion.h2>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-8">
+            {renderMissionVision}
+          </div>
+        </div>
       </section>
 
       {/* Foundation Section*/}

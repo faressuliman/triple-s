@@ -1,8 +1,8 @@
-import type { ISlideShow, IServices, ISteps, IGetInTouch } from "../interfaces";
+import type { ISlideShow, IServices, ISteps, IGetInTouch, IStory } from "../interfaces";
 import boat1 from "../assets/boat-1.jpg"
 import equipment1 from "../assets/equipment-1.jpg"
 import oceanWaves from "../assets/ocean-waves.jpg"
-import { Cog, Palette, Clock, Target, Wrench, Ship, ShieldCheck, MapPin, Mail } from "lucide-react";
+import { Cog, Palette, Clock, Target, Wrench, ShieldCheck, MapPin, Mail, Compass, Lightbulb, Anchor } from "lucide-react";
 
 export const slideShow: ISlideShow[] = [
     {
@@ -66,7 +66,7 @@ export const steps: ISteps[] = [
     {
         title: "Deploy",
         description: "We execute with disciplined logistics and clear checkpoints across the project timeline.",
-        Icon: Ship,
+        Icon: Anchor,
     },
 
     {
@@ -106,3 +106,49 @@ export const GetInTouch: IGetInTouch[] = [
     },
 
 ]
+
+export const missionVision: IServices[] = [
+    {
+        icon: Compass,
+        title: "MISSION",
+        description: "To be the most trusted and innovative partner in the marine industry, delivering superior solutions while maintaining the highest standards of safety and environmental responsibility. We strive to exceed expectations through our commitment to excellence, safety, and sustainable practices that benefit both our clients and the marine ecosystem.",
+        color: "text-primary",
+    },
+    
+    {
+        icon: Lightbulb,
+        title: "VISION",
+        description: "To shape the future of maritime operations through cutting-edge technology, sustainable practices, and unwavering commitment to excellence. We envision a world where marine technology seamlessly integrates innovation with environmental stewardship, creating safer, more efficient, and sustainable maritime solutions for generations to come.",
+        color: "text-accent",
+    },
+];
+
+export const storyTimeline: IStory[] = [
+    {
+        badge: "Start",
+        title: "Our Beginning",
+        description: "Started with a simple yet powerful vision: to transform maritime operations through cutting-edge technology and sustainable practices.",
+        color: "#4B6F9B"
+    },
+
+    {
+        badge: "Innovation",
+        title: "Technology First",
+        description: "Developed proprietary marine solutions that combine advanced navigation systems with environmental consciousness.",
+        color: "#4B6F9B"
+    },
+
+    {
+        badge: "Growth",
+        title: "Expanding Horizons",
+        description: "Extended our reach globally, serving diverse maritime markets while maintaining our commitment to excellence.",
+        color: "#4B6F9B"
+    },
+
+    {
+        badge: "Future",
+        title: "Leading Tomorrow",
+        description: "Continuing to pioneer the future of maritime technology with innovative solutions that drive industry transformation.",
+        color: "#4B6F9B"
+    }
+];

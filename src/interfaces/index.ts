@@ -28,4 +28,11 @@ export interface IGetInTouch {
     description: ReactNode
 }
 
+export interface IStory {
+    badge: string,
+    title: string,
+    description: string,
+    color: string
+}
+
 export type IFormInput = z.infer<typeof contactSchema>;
