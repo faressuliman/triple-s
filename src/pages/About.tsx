@@ -70,11 +70,9 @@ const About = () => {
           <img
             src={sea}
             alt="Waves"
-            className="w-full h-full object-cover"
+            className="responsive-hero-image"
             fetchPriority="high"
             loading="eager"
-            width="1920"
-            height="1080"
           />
           <div className="absolute inset-0"></div>
         </motion.div>
@@ -359,11 +357,9 @@ const About = () => {
           <img
             src={logo}
             alt="Triple S Logo"
-            className="w-full max-w-lg object-contain transition-transform duration-500 hover:animate-spin"
+            className="responsive-logo transition-transform duration-500 hover:animate-spin"
             loading="lazy"
-            fetchPriority="auto"
-            width="400"
-            height="400"
+            fetchPriority="low"
           />
         </motion.div>
       </section>

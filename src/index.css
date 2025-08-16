@@ -45,3 +45,51 @@
 .input-wrapper:focus-within span {
   width: 100%;
 }
+
+/* Responsive Image Dimensions */
+.responsive-slideshow-image {
+  width: 679px;
+  height: 382px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .responsive-slideshow-image {
+    width: 885px;
+    height: 498px;
+  }
+}
+
+/* About Page Responsive Images */
+.responsive-logo {
+  width: 348px;
+  height: 348px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .responsive-logo {
+    width: 512px;
+    height: 512px;
+  }
+}
+
+.responsive-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .responsive-hero-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .responsive-hero-image {
+    width: 100%;
+    height: 100%;
+  }
+}

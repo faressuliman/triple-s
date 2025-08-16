@@ -20,7 +20,13 @@ const Loading: React.FC = () => {
       </div>
       <div className="marine-logo-container">
         <div className="marine-logo-glow"></div>
-        <img src={logo} alt="Company Logo" className="marine-logo" />
+        <img 
+          src={logo} 
+          alt="Company Logo" 
+          className="marine-logo w-20 h-20 md:w-24 md:h-24"
+          loading="eager"
+          fetchPriority="high"
+        />
       </div>
     </div>
   );
