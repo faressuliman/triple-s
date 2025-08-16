@@ -3,6 +3,7 @@ import router from './router'
 import { useState, useEffect } from 'react'
 import Loading from './components/ui/Loading';
 import { Toaster } from 'react-hot-toast';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <>
+      <Analytics />
       <RouterProvider router={router} />
       <Toaster />
     </>
