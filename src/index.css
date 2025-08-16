@@ -8,7 +8,7 @@
     color: #38d49c;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     .active {
         background-color: #09385e;
         color: #38d49c;

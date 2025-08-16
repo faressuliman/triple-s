@@ -97,7 +97,7 @@ const Contact = () => {
   return (
     <div>
       {/*Hero Section */}
-      <section className="relative h-[48vh] py-40 lg:py-0 flex items-center bg-gradient-to-r from-[#09253b] to-[#0e4d6d] overflow-hidden">
+      <section className="relative md:h-[48vh] h-[36vh] py-40 lg:py-0 flex items-center bg-gradient-to-r from-[#09253b] to-[#0e4d6d] overflow-hidden">
         {/* Background */}
         <motion.div
           className="absolute inset-0 z-0"
@@ -108,14 +108,14 @@ const Contact = () => {
         </motion.div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-8 md:pt-8">
+        <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-8">
           <motion.div
-            className="flex flex-col max-w-2xl"
+            className="flex flex-col max-w-2xl md:translate-y-0 -translate-y-4"
             initial={{ y: 20 }}
             animate={{ y: 0 }}
             transition={{ duration: 1, delay: 0.1 }}
           >
-            <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap md:text-nowrap mb-6">
+            <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap md:text-nowrap mb-3">
               Contact Us for Trusted <span className="text-[#38d49c]">Marine</span> Guidance
             </h1>
             <p className="md:text-xl text-lg text-[#f0f0f0]">
@@ -128,9 +128,9 @@ const Contact = () => {
       {/*Main Content Section*/}
       <section className="relative z-10 bg-[#F8FDFF]">
         {/* Contact Form */}
-        <div className="container mx-auto grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 pt-24 pb-24 lg:px-16 px-8 lg:gap-32 gap-24">
+        <div className="container mx-auto grid xl:grid-cols-3 md:grid-cols-1 grid-cols-1 pt-24 pb-24 lg:px-16 px-8 xl:gap-32 gap-24">
           <motion.div
-            className="lg:col-span-2 rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8"
+            className="xl:col-span-2 rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -203,7 +203,7 @@ const Contact = () => {
           </motion.div>
           {/* Get In Touch */}
           <motion.div
-            className="rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8 md:col-span-1 md:mx-auto md:w-3/4 lg:w-auto"
+            className="rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8 xl:col-span-1 md:mx-auto md:w-3/4 xl:w-auto"
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}

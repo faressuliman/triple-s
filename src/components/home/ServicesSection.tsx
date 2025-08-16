@@ -24,34 +24,30 @@ const ServicesSection = () => {
   ))
 
   return (
-    <section className="py-16 bg-[#F8FDFF] px-6">
+    <section className="py-12 bg-[#F8FDFF] px-6">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
-        {/* Title - Animates on page load */}
         <motion.div
-          className="text-center mb-12"
+          className="text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="md:text-3xl text-2xl font-bold text-[#07254B] mb-4">
+          <h2 className="md:text-3xl text-2xl font-bold text-[#07254B] mb-1.5">
             Why Choose Us
           </h2>
         </motion.div>
 
-        {/* Description - Animates when in view */}
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-6"
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          viewport={{ once: true, amount: 0.01 }}
         >
-          <p className="md:text-lg text-base max-w-2xl mx-auto text-[#5577A0]">
+          <p className="md:text-lg text-base max-w-2xl mx-auto text-[#5577A0] md:mb-10">
             We deliver exceptional marine services with unwavering commitment to quality, customization, and punctuality.
           </p>
         </motion.div>
 
-        {/* Service Cards - Animate when in view */}
         <motion.div
           className="grid gap-6 md:grid-cols-1 lg:grid-cols-3 grid-cols-1"
           initial={{ opacity: 0, y: 30 }}

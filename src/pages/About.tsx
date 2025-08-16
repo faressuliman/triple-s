@@ -59,7 +59,7 @@ const About = () => {
   return (
     <div>
       {/*Hero Section*/}
-      <div className="relative h-[48vh] py-40 lg:py-0 flex items-center overflow-hidden">
+      <div className="relative md:h-[48vh] h-36 py-36 lg:py-0 flex items-center overflow-hidden">
         {/* Background */}
         <motion.div
           className="absolute inset-0"
@@ -78,14 +78,14 @@ const About = () => {
         </motion.div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-8 md:pt-8">
+        <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-8 ">
           <motion.div
-            className="flex flex-col max-w-2xl"
+            className="flex flex-col max-w-2xl md:translate-y-0 -translate-y-4"
             initial={{ y: 20 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap mb-6">
+            <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap mb-3">
               Your Partner in <span className="text-[#38d49c]">Oceanic</span> Innovation
             </h1>
             <p className="md:text-xl text-lg text-[#f0f0f0]">
@@ -97,7 +97,7 @@ const About = () => {
       </div>
 
       {/*Main Content Section*/}
-      <section className="mx-auto grid lg:grid-cols-4  md:grid-cols-1 grid-cols-1 items-stretch pt-32 pb-24 bg-[#F8FDFF] lg:px-16 px-8 gap-8">
+      <section className="mx-auto grid lg:grid-cols-4  md:grid-cols-1 grid-cols-1 items-stretch pt-16 pb-24 bg-[#F8FDFF] lg:px-16 px-8 gap-8">
 
         {/* Story Section */}
         <div className="col-span-2 space-y-8 max-w-3xl">
