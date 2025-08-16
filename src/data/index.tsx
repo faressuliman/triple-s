@@ -111,14 +111,14 @@ export const missionVision: IServices[] = [
     {
         icon: Compass,
         title: "MISSION",
-        description: "To be the most trusted and innovative partner in the marine industry, delivering superior solutions while maintaining the highest standards of safety and environmental responsibility. We strive to exceed expectations through our commitment to excellence, safety, and sustainable practices that benefit both our clients and the marine ecosystem.",
+        description: "To be the most trusted and innovative partner in the marine industry, delivering superior solutions while maintaining the highest standards of safety and environmental responsibility.",
         color: "text-primary",
     },
     
     {
         icon: Lightbulb,
         title: "VISION",
-        description: "To shape the future of maritime operations through cutting-edge technology, sustainable practices, and unwavering commitment to excellence. We envision a world where marine technology seamlessly integrates innovation with environmental stewardship, creating safer, more efficient, and sustainable maritime solutions for generations to come.",
+        description: "To shape the future of maritime operations through cutting-edge technology, sustainable practices, and unwavering commitment to excellence.",
         color: "text-accent",
     },
 ];

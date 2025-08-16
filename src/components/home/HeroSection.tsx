@@ -13,6 +13,7 @@ const HeroSection = () => {
           autoPlay
           muted
           loop
+          preload="auto"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#19254B]/80 to-[#000000]/40" />
