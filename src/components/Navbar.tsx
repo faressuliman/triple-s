@@ -13,7 +13,7 @@ const Navbar = () => {
         <NavLink to="/" className="flex items-center md:space-x-3 space-x-1 rtl:space-x-reverse no-highlight">
           <motion.img 
             src={logo} 
-            className="responsive-navbar-logo" 
+            className="h-14 w-14 md:h-16 md:w-16" 
             alt="Triple S Logo"
             fetchPriority="high"
             loading="eager"

@@ -23,7 +23,7 @@ const Loading: React.FC = () => {
         <img 
           src={logo} 
           alt="Company Logo" 
-          className="marine-logo responsive-loading-logo"
+          className="marine-logo w-20 h-20 md:w-24 md:h-24"
           loading="eager"
           fetchPriority="high"
         />
