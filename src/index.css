@@ -60,6 +60,25 @@
   }
 }
 
+/* Home Page Slideshow Images - Exact Dimensions */
+.responsive-slideshow-mobile {
+  width: 679px;
+  height: 382px;
+  object-fit: cover;
+}
+
+.responsive-slideshow-desktop {
+  width: 885px;
+  height: 498px;
+  object-fit: cover;
+}
+
+/* Force image optimization */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* About Page Responsive Images */
 .responsive-logo {
   width: 348px;
@@ -71,6 +90,34 @@
   .responsive-logo {
     width: 512px;
     height: 512px;
+  }
+}
+
+/* Navbar Logo Responsive Sizing */
+.responsive-navbar-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .responsive-navbar-logo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Loading Logo Responsive Sizing */
+.responsive-loading-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .responsive-loading-logo {
+    width: 96px;
+    height: 96px;
   }
 }
 
