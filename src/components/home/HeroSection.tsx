@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Button from "../ui/Button";
 import vid from "../../assets/backgroundvid.mp4";
+import posterImage from "../../assets/posterImage.png";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
@@ -10,10 +11,11 @@ const HeroSection = () => {
       <section className="absolute inset-0">
         <video
           src={vid}
+          poster={posterImage}
           autoPlay
           muted
           loop
-          preload="auto"
+          preload="metadata"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#19254B]/80 to-[#000000]/40" />
