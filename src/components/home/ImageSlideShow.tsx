@@ -23,7 +23,7 @@ const ImageSlideShow = () => {
   };
 
   return (
-    <section className="py-16 bg-[#F8FDFF]">
+    <section className="pt-12 bg-[#F8FDFF]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title - Animates on page load */}
         <motion.div

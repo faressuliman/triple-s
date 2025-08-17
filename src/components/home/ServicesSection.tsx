@@ -24,7 +24,7 @@ const ServicesSection = () => {
   ))
 
   return (
-    <section className="py-12 bg-[#F8FDFF] px-6">
+    <section className="pt-12 bg-[#F8FDFF] px-6">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
         <motion.div
           className="text-center"

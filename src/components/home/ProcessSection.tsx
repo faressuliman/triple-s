@@ -43,9 +43,8 @@ const ProcessSection = () => {
   ))
 
   return (
-    <section className="py-16 bg-[#F8FDFF]">
+    <section className="py-12 bg-[#F8FDFF]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
-        {/* Title - Animates on page load */}
         <motion.div
           className="text-center mb-1.5"
           initial={{ opacity: 0, y: 16 }}
@@ -55,7 +54,6 @@ const ProcessSection = () => {
           <h2 className="md:text-3xl text-2xl font-bold text-[#07254B]">How We Deliver</h2>
         </motion.div>
 
-        {/* Description - Animates when in view */}
         <motion.div
           className="text-center mb-6"
           initial={{ opacity: 0, y: 16 }}
