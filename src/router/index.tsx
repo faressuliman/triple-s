@@ -7,6 +7,7 @@ import {
 import { Suspense, lazy } from "react";
 import Layout from "../components/Layout";
 import Loading from "../components/ui/Loading";
+import ErrorBoundary from "../components/ErrorBoundary";
 
 
 const Home = lazy(() => import("../pages"));
@@ -19,25 +20,33 @@ const router = createBrowserRouter(
         <>
             <Route path="/" element={<Layout />}>
                 <Route index element={
-                    <Suspense fallback={<Loading />}>
-                        <Home />
-                    </Suspense>
+                    <ErrorBoundary>
+                        <Suspense fallback={<Loading />}>
+                            <Home />
+                        </Suspense>
+                    </ErrorBoundary>
                 } />
                 <Route path="about" element={
-                    <Suspense fallback={<Loading />}>
-                        <About />
-                    </Suspense>
+                    <ErrorBoundary>
+                        <Suspense fallback={<Loading />}>
+                            <About />
+                        </Suspense>
+                    </ErrorBoundary>
                 } />
                 <Route path="contact" element={
-                    <Suspense fallback={<Loading />}>
-                        <Contact />
-                    </Suspense>
+                    <ErrorBoundary>
+                        <Suspense fallback={<Loading />}>
+                            <Contact />
+                        </Suspense>
+                    </ErrorBoundary>
                 } />
             </Route>
             <Route path="*" element={
-                <Suspense fallback={<Loading />}>
-                    <NotFound />
-                </Suspense>
+                <ErrorBoundary>
+                    <Suspense fallback={<Loading />}>
+                        <NotFound />
+                    </Suspense>
+                </ErrorBoundary>
             } />
         </>
     )
