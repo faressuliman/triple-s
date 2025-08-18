@@ -1,5 +1,8 @@
 import type { ISlideShow, IServices, ISteps, IGetInTouch, IStory } from "../interfaces";
 import boat1 from "../assets/boat-1.jpg"
+import firstSlide from "../assets/firstslide.jpeg"
+import thirdSlide from "../assets/thirdslide.jpeg"
+import secondSlide from "../assets/secondslide.jpeg"
 import equipment1 from "../assets/equipment-1.jpg"
 import oceanWaves from "../assets/ocean-waves.jpg"
 import { Clock, Target, Wrench, ShieldCheck, MapPin, Mail, Compass, Lightbulb, Anchor, Fan, ShipWheel, DatabaseZap } from "lucide-react";
@@ -7,21 +10,21 @@ import { Clock, Target, Wrench, ShieldCheck, MapPin, Mail, Compass, Lightbulb, A
 export const slideShow: ISlideShow[] = [
     {
         id: 1,
-        image: boat1,
+        image: firstSlide,
         title: "Propulsion Design and Supply",
         description: "Shaftline engineering, propeller selection and component supply"
     },
 
     {
         id: 2,
-        image: equipment1,
+        image: secondSlide,
         title: "Power Generation Systems",
         description: "Load analysis, generator sizing, specification and procurement"
     },
 
     {
         id: 3,
-        image: oceanWaves,
+        image: thirdSlide,
         title: "Marine HVAC, Centralized",
         description: "Heat load calculations, equipment selection and system layout"
     }

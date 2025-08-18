@@ -77,7 +77,7 @@ const ImageSlideShow = () => {
   ));
 
   return (
-    <section className="pt-12 md:pt-16 bg-[#F8FDFF]">
+    <section className="pt-12 md:pt-24 bg-[#F8FDFF]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-2"
@@ -104,13 +104,13 @@ const ImageSlideShow = () => {
       </div>
 
       <motion.div
-        className="relative max-w-4xl mx-auto px-4"
+        className="relative max-w-6xl mx-auto px-4"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        <div className="relative h-80 md:h-[450px] rounded-lg overflow-hidden shadow-xl shadow-[#CEF3FF] border border-[#8eddf7]">
+        <div className="relative h-80 md:h-[600px] rounded-md overflow-hidden shadow-xl shadow-[#CEF3FF] border border-[#8eddf7]">
           {renderSlides}
         </div>
 
