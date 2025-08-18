@@ -71,8 +71,8 @@ const ServicesSection = () => {
                         animate={{ scale: 1, rotate: 0, opacity: 1 }}
                         transition={{ type: "spring", stiffness: 260, damping: 18 }}
                       >
-                        <div className="h-16 w-16 md:h-20 md:w-20 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10">
-                          <Icon className={`h-10 w-10 md:h-12 md:w-12 text-[#07254B] ${color}`} />
+                        <div className="h-12 w-12 md:h-20 md:w-20 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10">
+                          <Icon className={`h-8 w-8 md:h-12 md:w-12 text-[#07254B] ${color}`} />
                         </div>
                       </motion.div>
                       <div className="flex-1 min-w-0">
@@ -81,7 +81,7 @@ const ServicesSection = () => {
                           initial={{ y: 8, opacity: 0 }}
                           animate={{ y: 0, opacity: 1 }}
                           transition={{ duration: 0.35, ease: "easeOut" }}
-                          className="text-lg sm:text-xl md:text-2xl font-bold text-[#07254B] mb-1 whitespace-normal"
+                          className="text-lg sm:text-lg md:text-2xl font-bold text-[#07254B] mb-1 whitespace-normal"
                         >
                           {title}
                         </motion.h3>
