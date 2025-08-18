@@ -31,8 +31,7 @@ export interface IGetInTouch {
 export interface IStory {
     badge: string,
     title: string,
-    description: string,
-    color: string
+    description: string
 }
 
 export type IFormInput = z.infer<typeof contactSchema>;

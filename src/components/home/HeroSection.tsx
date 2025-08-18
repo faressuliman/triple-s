@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Button from "../ui/Button";
 import vid from "../../assets/backgroundvid.mp4";
-import posterImage from "../../assets/posterImage.png";
+import posterImage from "../../assets/posterImage.jpg";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {

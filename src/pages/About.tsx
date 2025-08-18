@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import sea from "../assets/sea.png"
 import { Award, ShieldHalf } from "lucide-react";
 import logo from "../assets/logo.png";
-import ServiceCard from "../components/ui/ServiceCard";
+import Card from "../components/ui/Card";
 import { missionVision, storyTimeline } from "../data";
 import "../index.css"
 
@@ -17,7 +17,7 @@ const About = () => {
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6, delay: index * 0.3, ease: "easeOut" }}
     >
-      <ServiceCard {...item} />
+      <Card {...item} />
     </motion.div>
   ));
 
@@ -31,18 +31,13 @@ const About = () => {
       transition={{ duration: 0.8, delay: (index + 1) * 0.2 }}
     >
       <div
-        className="absolute left-2 lg:left-6 top-2 w-4 h-4 bg-white border-2 rounded-full shadow-lg"
-        style={{ borderColor: item.color }}
+        className="absolute left-2 lg:left-6 top-2 w-4 h-4 bg-white border-2 rounded-full shadow-lg border-[#4B6F9B]"
       ></div>
       <div className="ml-12 lg:ml-20">
         <div className="bg-white rounded-lg p-4 shadow-md border border-gray-100">
           <div className="flex items-center gap-3 mb-2">
             <span
-              className="text-sm font-bold px-3 py-1 rounded-full"
-              style={{
-                color: item.color,
-                backgroundColor: `${item.color}10`
-              }}
+              className="text-sm font-bold px-3 py-1 rounded-full text-[#4B6F9B] bg-[#4B6F9B]/10"
             >
               {item.badge}
             </span>
@@ -70,7 +65,7 @@ const About = () => {
           <img
             src={sea}
             alt="Waves"
-            className="responsive-hero-image"
+            className="w-full h-full object-cover"
             fetchPriority="high"
             loading="eager"
           />
@@ -357,7 +352,7 @@ const About = () => {
           <img
             src={logo}
             alt="Triple S Logo"
-            className="responsive-logo transition-transform duration-500 hover:animate-spin"
+            className="w-64 h-64 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem] object-contain transition-transform duration-500 hover:animate-spin"
             loading="lazy"
             fetchPriority="low"
           />

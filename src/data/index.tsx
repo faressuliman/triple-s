@@ -127,28 +127,24 @@ export const storyTimeline: IStory[] = [
     {
         badge: "Start",
         title: "Our Beginning",
-        description: "Started with a simple yet powerful vision: to transform maritime operations through cutting-edge technology and sustainable practices.",
-        color: "#4B6F9B"
+        description: "Started with a simple yet powerful vision: to transform maritime operations through cutting-edge technology and sustainable practices."
     },
 
     {
         badge: "Innovation",
         title: "Technology First",
-        description: "Developed proprietary marine solutions that combine advanced navigation systems with environmental consciousness.",
-        color: "#4B6F9B"
+        description: "Developed proprietary marine solutions that combine advanced navigation systems with environmental consciousness."
     },
 
     {
         badge: "Growth",
-        title: "Expanding Horizons",
-        description: "Extended our reach globally, serving diverse maritime markets while maintaining our commitment to excellence.",
-        color: "#4B6F9B"
+        title: "Reaching Beyond",
+        description: "Extended our reach globally, serving diverse maritime markets while maintaining our commitment to excellence."
     },
 
     {
         badge: "Future",
         title: "Leading Tomorrow",
-        description: "Continuing to pioneer the future of maritime technology with innovative solutions that drive industry transformation.",
-        color: "#4B6F9B"
+        description: "Continuing to pioneer the future of maritime technology with innovative solutions that drive industry transformation."
     }
 ];

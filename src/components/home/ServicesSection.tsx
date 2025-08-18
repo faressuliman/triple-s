@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ServiceCard from "../../components/ui/ServiceCard";
+import Card from "../../components/ui/Card";
 import { services } from "../../data/";
 
 const ServicesSection = () => {
@@ -14,7 +14,7 @@ const ServicesSection = () => {
       whileHover={{ y: -5 }}
       viewport={{ once: true }}
     >
-      <ServiceCard
+      <Card
         icon={service.icon}
         title={service.title}
         description={service.description}
@@ -24,26 +24,26 @@ const ServicesSection = () => {
   ))
 
   return (
-    <section className="pt-12 bg-[#F8FDFF] px-6">
+    <section className="pt-16 bg-[#F8FDFF]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
         <motion.div
-          className="text-center"
+          className="text-center mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="md:text-3xl text-2xl font-bold text-[#07254B] mb-1.5">
+          <h2 className="md:text-3xl text-2xl font-bold text-[#07254B] mb-3">
             Why Choose Us
           </h2>
         </motion.div>
 
         <motion.div
-          className="text-center mb-6"
+          className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          <p className="md:text-lg text-base max-w-2xl mx-auto text-[#5577A0] md:mb-10">
+          <p className="md:text-lg text-base max-w-2xl mx-auto text-[#5577A0]">
             We deliver exceptional marine services with unwavering commitment to quality, customization, and punctuality.
           </p>
         </motion.div>

@@ -12,7 +12,7 @@ import { useState, lazy, Suspense } from "react"
 import emailjs from 'emailjs-com';
 import toast from "react-hot-toast"
 
-// Lazy load the Map component to reduce initial bundle size
+// Map Lazy Load
 const LazyMap = lazy(() => import("../components/ui/Map"))
 
 const Contact = () => {
@@ -127,6 +127,7 @@ const Contact = () => {
 
       {/*Main Content Section*/}
       <section className="relative z-10 bg-[#F8FDFF]">
+
         {/* Contact Form */}
         <div className="container mx-auto grid xl:grid-cols-3 md:grid-cols-1 grid-cols-1 pt-24 pb-24 lg:px-16 px-8 xl:gap-32 gap-24">
           <motion.div
@@ -201,6 +202,7 @@ const Contact = () => {
               </motion.div>
             </form>
           </motion.div>
+
           {/* Get In Touch */}
           <motion.div
             className="rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8 xl:col-span-1 md:mx-auto md:w-3/5 xl:w-auto"
@@ -223,6 +225,7 @@ const Contact = () => {
             </div>
           </motion.div>
         </div>
+
         {/* Map */}
         <motion.div
           className="container mx-auto lg:px-16 px-8 mb-24"
@@ -231,8 +234,8 @@ const Contact = () => {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ type: "spring", stiffness: 80, damping: 25, duration: 1.2 }}
         >
-          <div className="rounded-xl shadow-xl shadow-indigo-300 border-2 border-[#316cb9] overflow-hidden">
-            <Suspense fallback={<div className="h-[450px] bg-gray-200 animate-pulse flex items-center justify-center">Loading map...</div>}>
+          <div className="rounded-lg shadow-xl shadow-indigo-300 border-2 border-[#316cb9] overflow-hidden">
+            <Suspense fallback={<div className="h-[500px] bg-gray-200 animate-pulse flex items-center justify-center">Loading map...</div>}>
               <LazyMap />
             </Suspense>
           </div>
