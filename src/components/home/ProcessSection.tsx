@@ -43,26 +43,26 @@ const ProcessSection = () => {
   ))
 
   return (
-    <section className="py-16 bg-[#F8FDFF]">
+    <section className="py-12 md:py-16 bg-[#F8FDFF]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
         <motion.div
-          className="text-center mb-4"
+          className="text-center mb-2"
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="md:text-3xl text-2xl font-bold text-[#07254B] mb-3">How We Deliver</h2>
+          <h2 className="md:text-3xl text-2xl font-bold text-[#07254B]">How We Deliver Projects</h2>
         </motion.div>
 
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-6"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           viewport={{ once: true, amount: 0.01 }}
         >
           <p className="md:text-lg text-base max-w-2xl mx-auto text-[#5577A0]">
-            A reliable 4-step workflow that keeps projects on track – from first brief to long-term support.
+            From requirements and engineering to procurement, delivery and long‑term support.
           </p>
         </motion.div>
 

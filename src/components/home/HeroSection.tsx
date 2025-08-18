@@ -33,7 +33,7 @@ const HeroSection = () => {
             className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap mb-8"
 
           >
-            Empowering Progress in the <span className="text-[#38d49c]">Marine</span> Industry
+            <span className="text-[#38d49c]">Marine</span> Systems Engineering and Supply
           </h1>
           <p
             className="md:text-xl text-lg text-[#f0f0f0] mb-8"

@@ -7,12 +7,11 @@ const ImageSlideShow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    const timer = setInterval(() => {
+    const timer = setTimeout(() => {
       setCurrentSlide((prev) => (prev + 1) % slideShow.length);
     }, 5000);
-
-    return () => clearInterval(timer);
-  }, []);
+    return () => clearTimeout(timer);
+  }, [currentSlide]);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slideShow.length);
@@ -37,12 +36,31 @@ const ImageSlideShow = () => {
         fetchPriority={index === 0 ? "high" : "auto"}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-      <div className="absolute bottom-6 left-6 p-6 md:p-8 text-white">
-        <h3 className="text-2xl md:text-3xl font-bold mb-2">
+      <motion.div
+        className="absolute bottom-6 left-6 p-6 md:p-8 text-white"
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 80, damping: 25, duration: 0.9 }}
+      >
+        <motion.h3
+          key={`title-${slide.id}-${index}`}
+          initial={{ y: 12, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="text-2xl md:text-3xl font-bold mb-2"
+        >
           {slide.title}
-        </h3>
-        <p className="text-lg opacity-90">{slide.description}</p>
-      </div>
+        </motion.h3>
+        <motion.p
+          key={`desc-${slide.id}-${index}`}
+          initial={{ y: 14, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.55, ease: "easeOut", delay: 0.05 }}
+          className="text-lg opacity-90"
+        >
+          {slide.description}
+        </motion.p>
+      </motion.div>
     </div>
   ));
 
@@ -59,29 +77,28 @@ const ImageSlideShow = () => {
   ));
 
   return (
-    <section className="pt-16 bg-[#F8FDFF]">
+    <section className="pt-12 md:pt-16 bg-[#F8FDFF]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          className="text-center mb-4"
+          className="text-center mb-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="md:text-3xl text-2xl font-bold text-[#07254B] mb-3">
-            Our Marine Excellence
+          <h2 className="md:text-3xl text-2xl font-bold text-[#07254B]">
+            Marine Systems We Deliver
           </h2>
         </motion.div>
 
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           viewport={{ once: true, amount: 0.01 }}
         >
           <p className="md:text-lg text-base max-w-2xl mx-auto text-[#5577A0]">
-            Discover our comprehensive range of marine services and equipment
-            designed to meet the highest industry standards.
+            Propulsion, onboard power and marine HVAC. Engineered, specified and supplied to fit your vessel.
           </p>
         </motion.div>
       </div>

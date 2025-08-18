@@ -2,76 +2,76 @@ import type { ISlideShow, IServices, ISteps, IGetInTouch, IStory } from "../inte
 import boat1 from "../assets/boat-1.jpg"
 import equipment1 from "../assets/equipment-1.jpg"
 import oceanWaves from "../assets/ocean-waves.jpg"
-import { Cog, Palette, Clock, Target, Wrench, ShieldCheck, MapPin, Mail, Compass, Lightbulb, Anchor } from "lucide-react";
+import { Clock, Target, Wrench, ShieldCheck, MapPin, Mail, Compass, Lightbulb, Anchor, Fan, ShipWheel, DatabaseZap } from "lucide-react";
 
 export const slideShow: ISlideShow[] = [
     {
         id: 1,
         image: boat1,
-        title: "Professional Marine Vessels",
-        description: "Modern commercial boats designed for efficiency and reliability"
+        title: "Propulsion Design and Supply",
+        description: "Shaftline engineering, propeller selection and component supply"
     },
 
     {
         id: 2,
         image: equipment1,
-        title: "Advanced Marine Equipment",
-        description: "State-of-the-art gear and technology for all maritime operations"
+        title: "Power Generation Systems",
+        description: "Load analysis, generator sizing, specification and procurement"
     },
 
     {
         id: 3,
         image: oceanWaves,
-        title: "Ocean Expertise",
-        description: "Deep knowledge of marine environments and conditions"
+        title: "Marine HVAC, Centralized",
+        description: "Heat load calculations, equipment selection and system layout"
     }
 ]
 
 export const services: IServices[] = [
     {
-        icon: Cog,
-        title: "Efficient in Technicalities",
-        description: "Advanced technical expertise with cutting-edge marine technology and engineering solutions for optimal performance.",
+        icon: ShipWheel,
+        title: "Propulsion Design • Shaftlines and Propellers",
+        description: "Calculations for shaft diameter, bearing spans and alignment, propeller selection and supply of shaftline components.",
         color: "text-primary",
     },
 
     {
-        icon: Palette,
-        title: "Flexible in Customization",
-        description: "Tailored solutions designed to meet your specific marine requirements with adaptable and personalized approaches.",
+        icon: DatabaseZap,
+        title: "Power System Sizing for Generators",
+        description: "Load analysis, generator sizing and specification, single or multi‑set solutions with procurement support.",
         color: "text-accent",
     },
 
     {
-        icon: Clock,
-        title: "Deliver On Time",
-        description: "Reliable project delivery with strict adherence to timelines, ensuring your marine operations stay on schedule.",
+        icon: Fan,
+        title: "Marine HVAC Design • Centralized Systems",
+        description: "Heat load calculations, equipment selection, ducting and layout, plus supply for chilled‑water or DX systems.",
         color: "text-primary",
     },
 ];
 
 export const steps: ISteps[] = [
     {
-        title: "Discover",
-        description: "We clarify objectives, constraints, and success criteria with a focused technical brief.",
+        title: "Brief & Survey",
+        description: "Technical requirements, constraints and on‑board survey where needed.",
         Icon: Target,
     },
 
     {
-        title: "Design",
-        description: "Engineers craft a practical plan – equipment, scope, and schedule aligned to your needs.",
+        title: "Engineering & Sizing",
+        description: "Calculations for shaftlines and propellers, generator load studies and marine HVAC heat loads.",
         Icon: Wrench,
     },
 
     {
-        title: "Deploy",
-        description: "We execute with disciplined logistics and clear checkpoints across the project timeline.",
+        title: "Procurement & Fabrication",
+        description: "Specification, sourcing and fabrication/assembly of equipment and components.",
         Icon: Anchor,
     },
 
     {
-        title: "Support",
-        description: "Post-delivery assistance and continuous improvement to keep operations reliable.",
+        title: "Delivery & Support",
+        description: "Delivery, documentation and post‑delivery support for reliable operation.",
         Icon: ShieldCheck,
     },
 ];

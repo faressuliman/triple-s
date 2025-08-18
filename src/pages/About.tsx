@@ -81,10 +81,10 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap mb-3">
-              Your Partner in <span className="text-[#38d49c]">Oceanic</span> Innovation
+              Practical <span className="text-[#38d49c]">Marine</span> Engineering for Vessels
             </h1>
             <p className="md:text-xl text-lg text-[#f0f0f0]">
-              At Triple S, we deliver smart, end-to-end marine solutions that drive performance, safety, and sustainability.
+              Our team turns marine requirements into working systems. We focus on propulsion, onboard power and centralized HVAC, designed precisely and delivered on schedule.
             </p>
           </motion.div>
         </div>
@@ -135,7 +135,7 @@ const About = () => {
             animate={{ x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Founded with an audacious vision to revolutionize the marine industry, we've transformed from a small team of passionate innovators into a globally recognized leader.
+            We exist to solve technical marine problems. Every project begins by understanding the vessel, its loads and constraints, and the outcome the owner needs.
           </motion.p>
 
           <motion.p
@@ -144,7 +144,7 @@ const About = () => {
             animate={{ x: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            Our journey has been marked by breakthrough innovations, strategic partnerships, and an unwavering commitment to pushing the boundaries of what's possible in maritime technology.
+            Then we engineer, specify and supply. Shaftlines and propellers, generators and distribution, chilled‑water or DX HVAC, all coordinated to integrate cleanly on board.
           </motion.p>
 
           {/* Icons and Text */}
