@@ -59,7 +59,7 @@ const ServicesSection = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -40 }}
                 transition={{ duration: 0.35, ease: "easeOut" }}
-                className="flex flex-row md:flex-row items-start md:items-center gap-4 md:gap-8 text-left md:text-left px-6 md:px-10 py-6 md:py-10 pr-14 md:pr-16 pb-16 md:pb-10 h-60 md:h-56"
+                className="flex flex-row md:flex-row items-start md:items-center gap-4 md:gap-8 text-left md:text-left px-6 md:px-10 py-6 md:py-10 pr-14 md:pr-16 pb-16 md:pb-10 h-64 md:h-56"
               >
                 {(() => {
                   const { icon: Icon, title, description, color } = services[currentIndex];

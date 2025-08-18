@@ -47,7 +47,7 @@ export const services: IServices[] = [
 
     {
         icon: Fan,
-        title: "Marine HVAC Design • Centralized Systems",
+        title: "Marine HVAC Design - Centralized Systems",
         description: "Heat load calculations, equipment selection, ducting and layout, plus supply for chilled‑water or DX systems.",
         color: "text-primary",
     },
