@@ -54,42 +54,34 @@ const About = () => {
   return (
     <div>
       {/*Hero Section*/}
-      <div className="relative md:h-[48vh] h-36 py-36 lg:py-0 flex items-center overflow-hidden">
+      <section className="relative md:h-[48vh] h-[36vh] py-40 lg:py-0 flex items-center bg-gradient-to-r from-[#09253b] to-[#0e4d6d] overflow-hidden">
         {/* Background */}
         <motion.div
-          className="absolute inset-0"
+          className="absolute inset-0 z-0"
           initial={{ scale: 1.05 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1 }}
         >
-          <img
-            src={sea}
-            alt="Waves"
-            className="w-full h-full object-cover"
-            fetchPriority="high"
-            loading="eager"
-          />
-          <div className="absolute inset-0"></div>
+          <img src={sea} alt="Sea image" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
         </motion.div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-8 ">
+        <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-8">
           <motion.div
             className="flex flex-col max-w-2xl md:translate-y-0 -translate-y-4"
             initial={{ y: 20 }}
             animate={{ y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
+            transition={{ duration: 1, delay: 0.1 }}
           >
-            <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap mb-3">
-              Practical <span className="text-[#38d49c]">Marine</span> Engineering for Vessels
+            <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap md:text-nowrap mb-3">
+              Your <span className="text-[#38d49c]">Gateway</span> To Smarter Seas
             </h1>
             <p className="md:text-xl text-lg text-[#f0f0f0]">
-              Our team turns marine requirements into working systems. We focus on propulsion, onboard power and centralized HVAC, designed precisely and delivered on schedule.
+              Delivering smart marine solutions that power safer, stronger, and more efficient vessels.
             </p>
           </motion.div>
         </div>
-
-      </div>
+      </section>
 
       {/*Main Content Section*/}
       <section className="mx-auto grid lg:grid-cols-4  md:grid-cols-1 grid-cols-1 items-stretch pt-16 pb-24 bg-[#F8FDFF] lg:px-16 px-8 gap-8">
