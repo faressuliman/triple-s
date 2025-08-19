@@ -25,7 +25,7 @@ const Footer = () => {
                 className="inline-block"
                 aria-label="Visit our LinkedIn page"
               >
-                <Linkedin className="h-6 w-6 text-[#d4d4d4] hover:text-[#38D49C] transition-colors duration-300" />
+                <Linkedin className="h-6 w-6 text-[#d4d4d4] text-blue-200 hover:text-[#38D49C] transition-colors duration-300" />
               </a>
             </div>
           </div>
