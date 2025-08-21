@@ -52,12 +52,12 @@ const HeroSection = () => {
             transition={{ duration: 1.2 }}
           >
             <Link to="/contact" className="w-full md:w-auto">
-              <Button className="border-[#2d7a5a] bg-[#2d7a5a] hover:bg-[#38d49c] hover:border-[#38d49c] text-white">
+              <Button className="border-[#2d7a5a] bg-[#2d7a5a] hover:bg-[#52977a] hover:border-[#52977a] text-white">
                 Get Started →
               </Button>
             </Link>
             <Link to="/about" className="w-full md:w-auto">
-              <Button className="border-[#3c9776] hover:bg-white hover:border-white hover:text-black">
+              <Button className="border-[#52977a] hover:bg-white hover:border-white hover:text-black">
                 More About Us
               </Button>
             </Link>

@@ -126,7 +126,7 @@ const Contact = () => {
       </section>
 
       {/*Main Content Section*/}
-      <section className="relative z-10 bg-[#F8FDFF]">
+      <section className="relative z-10 bg-[#EEF6FB]">
 
         {/* Contact Form */}
         <div className="container mx-auto grid xl:grid-cols-3 md:grid-cols-1 grid-cols-1 pt-24 pb-24 lg:px-16 px-8 xl:gap-32 gap-24">

@@ -1,11 +1,9 @@
 import { steps } from "../../data";
 import { motion } from "framer-motion";
-import { lazy, Suspense } from "react";
 
 const ProcessSection = () => {
 
-  // Map Lazy Load
-  const LazyMap = lazy(() => import("../../components/ui/Map"))
+
 
   const containerVariants = {
     hidden: { opacity: 1 },
@@ -47,7 +45,7 @@ const ProcessSection = () => {
   ))
 
   return (
-    <section className="py-12 md:py-24 bg-[#F8FDFF]">
+    <section className="pt-16 pb-24 bg-[#EEF6FB]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
         <motion.div
           className="text-center mb-2"
@@ -91,27 +89,7 @@ const ProcessSection = () => {
           </motion.div>
         </div>
 
-        <motion.div
-          className="pt-12 md:pt-24"
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ type: "spring", stiffness: 80, damping: 25, duration: 1.2 }}
-        >
-          <motion.div
-            className="text-center mb-8"
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="md:text-3xl text-2xl font-bold text-[#07254B]">Where You Can Find Us</h2>
-          </motion.div>
-          <div className="rounded-lg shadow-xl shadow-indigo-300 border-2 border-[#316cb9] overflow-hidden">
-            <Suspense fallback={<div className="h-[500px] bg-gray-200 animate-pulse flex items-center justify-center">Loading map...</div>}>
-              <LazyMap />
-            </Suspense>
-          </div>
-        </motion.div>
+
       </div>
     </section>
   );

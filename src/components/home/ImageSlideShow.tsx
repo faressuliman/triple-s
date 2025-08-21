@@ -67,7 +67,7 @@ const ImageSlideShow = () => {
   const renderIndicators = slideShow.map((_, index) => (
     <motion.button
       key={index}
-      className={`cursor-pointer w-3 h-3 rounded-full transition-all ${index === currentSlide ? "bg-green-500 scale-125" : "bg-white/50 hover:bg-white/70"
+      className={`cursor-pointer w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${index === currentSlide ? "bg-green-500 scale-125" : "bg-white/50 hover:bg-white/70"
         }`}
       onClick={() => setCurrentSlide(index)}
       whileHover={{ scale: 1.2 }}
@@ -77,7 +77,7 @@ const ImageSlideShow = () => {
   ));
 
   return (
-    <section className="pt-12 md:pt-24 bg-[#F8FDFF]">
+    <section className="pt-16 pb-24 bg-[#F8FDFF]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-2"

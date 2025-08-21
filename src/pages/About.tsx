@@ -33,8 +33,8 @@ const About = () => {
       <div
         className="absolute left-2 lg:left-6 top-2 w-4 h-4 bg-white border-2 rounded-full shadow-lg border-[#4B6F9B]"
       ></div>
-      <div className="ml-12 lg:ml-20">
-        <div className="bg-white rounded-lg p-4 shadow-md border border-gray-100">
+      <div className="ml-12 lg:ml-20 w-full max-w-2xl">
+        <div className="bg-white rounded-lg p-4 shadow-xl border border-gray-100 w-full">
           <div className="flex items-center gap-3 mb-2">
             <span
               className="text-sm font-bold px-3 py-1 rounded-full text-[#4B6F9B] bg-[#4B6F9B]/10"
@@ -84,7 +84,7 @@ const About = () => {
       </section>
 
       {/*Main Content Section*/}
-      <section className="mx-auto grid lg:grid-cols-4  md:grid-cols-1 grid-cols-1 items-stretch pt-16 pb-24 bg-[#F8FDFF] lg:px-16 px-8 gap-8">
+      <section className="mx-auto grid lg:grid-cols-4  md:grid-cols-1 grid-cols-1 items-stretch pt-16 pb-24 bg-[#EEF6FB] lg:px-16 px-8 gap-8">
 
         {/* Story Section */}
         <div className="col-span-2 space-y-8 max-w-3xl">
@@ -188,7 +188,7 @@ const About = () => {
       </section>
 
       {/* Mission and Vision Section */}
-      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#F8FDFF]">
+      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#EEF6FB]">
         <div className="max-w-screen-3xl mx-auto">
           <motion.div
             className="flex flex-row gap-3 items-center mb-12"
@@ -222,7 +222,7 @@ const About = () => {
       </section>
 
       {/* Foundation Section*/}
-      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#F8FDFF] grid lg:grid-cols-4 grid-cols-1 gap-8">
+      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#EEF6FB] grid lg:grid-cols-4 grid-cols-1 gap-8">
         <div className="lg:col-span-4 col-span-1 space-y-8 max-w-screen-3xl w-full">
           <motion.div
             className="flex flex-row gap-3 items-center"
@@ -283,7 +283,7 @@ const About = () => {
       </section>
 
       {/* Logo Section */}
-      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#F8FDFF] grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-12 items-center">
+      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#EEF6FB] grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-12 items-center">
         {/* Text Section */}
         <div className="space-y-8">
           <motion.div

@@ -19,7 +19,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="pt-12 md:pt-16 bg-[#F8FDFF]">
+    <section className="pt-16 pb-24 bg-[#EEF6FB]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
         <motion.div
           className="text-center mb-2"
