@@ -15,7 +15,7 @@ const About = () => {
       initial={{ y: 50, opacity: 0, scale: 0.95 }}
       whileInView={{ y: 0, opacity: 1, scale: 1 }}
       viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.6, delay: index * 0.3, ease: "easeOut" }}
+      transition={{ duration: 0.8, delay: index * 0.15, ease: "easeOut" }}
     >
       <Card {...item} />
     </motion.div>
@@ -28,7 +28,7 @@ const About = () => {
       initial={{ opacity: 0, x: 20 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, amount: 0.01 }}
-      transition={{ duration: 0.8, delay: (index + 1) * 0.2 }}
+      transition={{ duration: 0.8, delay: index * 0.15 }}
     >
       <div
         className="absolute left-2 lg:left-6 top-2 w-4 h-4 bg-white border-2 rounded-full shadow-lg border-[#4B6F9B]"
@@ -60,7 +60,7 @@ const About = () => {
           className="absolute inset-0 z-0"
           initial={{ scale: 1.05 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.0 }}
         >
           <img src={sea} alt="Sea image" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
         </motion.div>
@@ -71,7 +71,7 @@ const About = () => {
             className="flex flex-col max-w-2xl md:translate-y-0 -translate-y-4"
             initial={{ y: 20 }}
             animate={{ y: 0 }}
-            transition={{ duration: 1, delay: 0.1 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
           >
             <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap md:text-nowrap mb-3">
               Your <span className="text-[#38d49c]">Gateway</span> To Smarter Seas
@@ -105,7 +105,7 @@ const About = () => {
               className="text-[#0A3251] font-semibold text-sm"
               initial={{ y: -12 }}
               animate={{ y: 0 }}
-              transition={{ duration: 0.8, delay: 0.15 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
             >
               OUR STORY
             </motion.h2>
@@ -209,7 +209,7 @@ const About = () => {
               initial={{ y: -12 }}
               whileInView={{ y: 0 }}
               viewport={{ once: true, amount: 0.01 }}
-              transition={{ duration: 0.8, delay: 0.15 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
             >
               OUR PURPOSE
             </motion.h2>
@@ -243,7 +243,7 @@ const About = () => {
               initial={{ y: -12 }}
               whileInView={{ y: 0 }}
               viewport={{ once: true, amount: 0.01 }}
-              transition={{ duration: 0.8, delay: 0.15 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
             >
               OUR FOUNDATION
             </motion.h2>
@@ -305,7 +305,7 @@ const About = () => {
               initial={{ y: -12 }}
               whileInView={{ y: 0 }}
               viewport={{ once: true, amount: 0.01 }}
-              transition={{ duration: 0.8, delay: 0.15 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
             >
               OUR IDENTITY
             </motion.h2>

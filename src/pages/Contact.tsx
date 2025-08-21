@@ -72,7 +72,7 @@ const Contact = () => {
   const renderGetInTouch = GetInTouch.map(({ Icon, title, description }, idx) => (
     <motion.div
       key={idx}
-      className="flex flex-col justify-between gap-10"
+      className="flex flex-col justify-around gap-60"
       initial={{ scale: 0.8, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
       viewport={{ once: true, amount: 0.3 }}
@@ -126,12 +126,12 @@ const Contact = () => {
       </section>
 
       {/*Main Content Section*/}
-      <section className="relative z-10 bg-[#EEF6FB]">
+      <section className="relative z-10 bg-[#EEF6FB] pb-24">
 
         {/* Contact Form */}
         <div className="container mx-auto grid xl:grid-cols-3 md:grid-cols-1 grid-cols-1 pt-24 pb-24 lg:px-16 px-8 xl:gap-32 gap-24">
           <motion.div
-            className="xl:col-span-2 rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8"
+            className="bg-white xl:col-span-2 rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -205,7 +205,7 @@ const Contact = () => {
 
           {/* Get In Touch */}
           <motion.div
-            className="rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8 xl:col-span-1 md:mx-auto md:w-3/5 xl:w-auto"
+            className="bg-white rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8 xl:col-span-1 md:mx-auto md:w-3/5 xl:w-auto h-[550px]"
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -220,7 +220,7 @@ const Contact = () => {
             >
               Get In Touch
             </motion.h1>
-            <div className="flex flex-col justify-between gap-12">
+            <div className="flex flex-col justify-between gap-12 flex-1">
               {renderGetInTouch}
             </div>
           </motion.div>
@@ -228,7 +228,7 @@ const Contact = () => {
 
         {/* Map */}
         <motion.div
-          className="container mx-auto lg:px-16 px-8 mb-24"
+          className="container mx-auto lg:px-16 px-8 bg-[#EEF6FB]"
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}

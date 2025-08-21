@@ -50,7 +50,8 @@ const ProcessSection = () => {
         <motion.div
           className="text-center mb-2"
           initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.01 }}
           transition={{ duration: 0.8 }}
         >
           <h2 className="md:text-3xl text-2xl font-bold text-[#07254B]">How We Deliver Projects</h2>

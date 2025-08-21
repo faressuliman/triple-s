@@ -40,13 +40,13 @@ const ImageSlideShow = () => {
         className="absolute bottom-6 left-6 p-6 md:p-8 text-white"
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ type: "spring", stiffness: 80, damping: 25, duration: 0.9 }}
+        transition={{ duration: 0.8 }}
       >
         <motion.h3
           key={`title-${slide.id}-${index}`}
           initial={{ y: 12, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-2xl md:text-3xl font-bold mb-2"
         >
           {slide.title}
@@ -55,7 +55,7 @@ const ImageSlideShow = () => {
           key={`desc-${slide.id}-${index}`}
           initial={{ y: 14, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.55, ease: "easeOut", delay: 0.05 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
           className="text-lg opacity-90"
         >
           {slide.description}
@@ -82,7 +82,8 @@ const ImageSlideShow = () => {
         <motion.div
           className="text-center mb-2"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.01 }}
           transition={{ duration: 0.8 }}
         >
           <h2 className="md:text-3xl text-2xl font-bold text-[#07254B]">
@@ -107,7 +108,7 @@ const ImageSlideShow = () => {
         className="relative max-w-6xl mx-auto px-4"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
+        transition={{ duration: 0.8, delay: 0.1 }}
         viewport={{ once: true, amount: 0.2 }}
       >
         <div className="relative h-80 md:h-[600px] rounded-md overflow-hidden shadow-xl shadow-[#CEF3FF] border border-[#8eddf7]">
