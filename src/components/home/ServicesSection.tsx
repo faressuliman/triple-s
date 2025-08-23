@@ -46,7 +46,7 @@ const ServicesSection = () => {
 
         <div className="relative">
           <motion.div
-            className="relative bg-white rounded-2xl border border-[#CEF3FF] shadow-lg shadow-indigo-200/40 overflow-hidden"
+            className="relative bg-white rounded-lg border border-[#CEF3FF] shadow-lg shadow-indigo-200/40 overflow-hidden"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ amount: 0.2, once: true }}
@@ -71,7 +71,7 @@ const ServicesSection = () => {
                         animate={{ scale: 1, rotate: 0, opacity: 1 }}
                         transition={{ duration: 0.8 }}
                       >
-                        <div className="h-12 w-12 md:h-20 md:w-20 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10">
+                        <div className="h-12 w-12 md:h-20 md:w-20 rounded-lg flex items-center justify-center bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10">
                           <Icon className={`h-8 w-8 md:h-12 md:w-12 text-[#07254B] ${color}`} />
                         </div>
                       </motion.div>

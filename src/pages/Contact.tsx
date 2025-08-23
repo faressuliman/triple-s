@@ -131,7 +131,7 @@ const Contact = () => {
         {/* Contact Form */}
         <div className="container mx-auto grid xl:grid-cols-3 md:grid-cols-1 grid-cols-1 pt-24 pb-24 lg:px-16 px-8 xl:gap-32 gap-24">
           <motion.div
-            className="bg-white xl:col-span-2 rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8"
+            className="bg-white xl:col-span-2 rounded-lg shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -205,7 +205,7 @@ const Contact = () => {
 
           {/* Get In Touch */}
           <motion.div
-            className="bg-white rounded-xl shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8 xl:col-span-1 md:mx-auto md:w-3/5 xl:w-auto h-[550px]"
+            className="bg-white rounded-lg shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8 xl:col-span-1 md:mx-auto md:w-3/5 xl:w-auto h-[550px]"
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
