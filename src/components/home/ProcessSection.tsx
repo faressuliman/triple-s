@@ -64,7 +64,7 @@ const ProcessSection = () => {
           transition={{ duration: 0.8, delay: 0.1 }}
           viewport={{ once: true, amount: 0.01 }}
         >
-          <p className="md:text-lg text-base max-w-2xl mx-auto text-[#5577A0]">
+          <p className="md:text-lg text-base max-w-2xl mx-auto text-[#4B6F9B]">
             From requirements and engineering to procurement, delivery and long‑term support.
           </p>
         </motion.div>

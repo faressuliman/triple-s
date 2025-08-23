@@ -9,7 +9,7 @@ const ServiceCard = ({ icon: Icon, title, description, color }: IServices) => {
                 <Icon className={`md:h-12 md:w-12 h-10 w-10 text-[#07254B] ${color}`} />
             </div>
             <h3 className="text-xl font-bold mb-1 text-[#07254B]">{title}</h3>
-            <p className=" text-[#7994B5]">{description}</p>
+            <p className=" text-[#4B6F9B]">{description}</p>
 
             <div className={`absolute bottom-2 left-1/2 -translate-x-1/2 w-12 rounded-md h-1 ${lineColor} transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100`}></div>
         </div>

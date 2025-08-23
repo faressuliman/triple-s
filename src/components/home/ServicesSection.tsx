@@ -39,7 +39,7 @@ const ServicesSection = () => {
           viewport={{ amount: 0.2, once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          <p className="md:text-lg text-base max-w-2xl mx-auto text-[#5577A0]">
+          <p className="md:text-lg text-base max-w-2xl mx-auto text-[#4B6F9B]">
             Propulsion, power generation and centralized marine HVAC engineered and delivered for your vessel.
           </p>
         </motion.div>

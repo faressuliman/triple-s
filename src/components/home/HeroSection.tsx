@@ -3,21 +3,34 @@ import Button from "../ui/Button";
 import vid from "../../assets/backgroundvid.mp4";
 import posterImage from "../../assets/posterImage.jpg";
 import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 const HeroSection = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    // Load video only when component mounts
+    if (videoRef.current) {
+      videoRef.current.load();
+    }
+  }, []);
+
   return (
     <section className="relative md:h-[88vh] h-[80vh] py-60 lg:py-0 flex items-center overflow-hidden">
       {/* Background */}
       <section className="absolute inset-0">
         <video
-          src={vid}
+          ref={videoRef}
           poster={posterImage}
           autoPlay
           muted
           loop
-          preload="metadata"
+          playsInline
+          preload="none"
           className="w-full h-full object-cover"
-        />
+        >
+          <source src={vid} type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-r from-[#19254B]/80 to-[#000000]/40" />
       </section>
 

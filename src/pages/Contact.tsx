@@ -88,7 +88,7 @@ const Contact = () => {
         </motion.div>
         <div className="md:col-span-4 col-span-3">
           <h2 className="text-lg font-semibold text-[#07254B] mb-1">{title}</h2>
-          <p className="text-[#5577A0] text-wrap">{description}</p>
+          <p className="text-[#4B6F9B] text-wrap">{description}</p>
         </div>
       </div>
     </motion.div>

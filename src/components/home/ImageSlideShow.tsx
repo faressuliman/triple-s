@@ -98,7 +98,7 @@ const ImageSlideShow = () => {
           transition={{ duration: 0.8, delay: 0.1 }}
           viewport={{ once: true, amount: 0.01 }}
         >
-          <p className="md:text-lg text-base max-w-2xl mx-auto text-[#5577A0]">
+          <p className="md:text-lg text-base max-w-2xl mx-auto text-[#4B6F9B]">
             Propulsion, onboard power and marine HVAC. Engineered, specified and supplied to fit your vessel.
           </p>
         </motion.div>
