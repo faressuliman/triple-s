@@ -34,7 +34,7 @@ const About = () => {
         className="absolute left-2 lg:left-6 top-2 w-4 h-4 bg-white border-2 rounded-full shadow-lg border-[#4B6F9B]"
       ></div>
       <div className="ml-12 lg:ml-20 w-full max-w-2xl">
-        <div className="bg-white rounded-lg p-4 shadow-xl border border-gray-300 w-full">
+        <div className="bg-white rounded-lg p-4 shadow-xl w-full">
           <div className="flex items-center gap-3 mb-2">
             <span
               className="text-sm font-bold px-3 py-1 rounded-full text-[#4B6F9B] bg-[#4B6F9B]/10"
