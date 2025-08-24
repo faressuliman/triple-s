@@ -108,9 +108,9 @@ const Contact = () => {
         </motion.div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-8">
+        <div className="relative z-10 text-white w-full mx-auto lg:px-20 px-8">
           <motion.div
-            className="flex flex-col max-w-2xl md:translate-y-0 -translate-y-4"
+            className="flex flex-col max-w-2xl md:translate-y-4 -translate-y-4"
             initial={{ y: 20 }}
             animate={{ y: 0 }}
             transition={{ duration: 1, delay: 0.1 }}
@@ -118,9 +118,8 @@ const Contact = () => {
             <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap md:text-nowrap mb-3">
               Contact Us for Trusted <span className="text-[#38d49c]">Marine</span> Guidance
             </h1>
-            <p className="md:text-xl text-lg text-[#f0f0f0]">
-              Get expert insights and solutions that keep your operations safe, efficient, and future-ready.
-            </p>
+            <p className="md:text-xl text-lg text-[#d5d5d5]">
+              Get expert insights and tailored solutions that empower your operations to be safe, efficient, adaptable, and always prepared for the future. </p>
           </motion.div>
         </div>
       </section>
@@ -205,7 +204,7 @@ const Contact = () => {
 
           {/* Get In Touch */}
           <motion.div
-            className="bg-white rounded-lg shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8 xl:col-span-1 md:mx-auto md:w-3/5 xl:w-auto h-[550px]"
+            className="bg-white rounded-lg shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8 xl:col-span-1 md:mx-auto md:w-3/5 xl:w-auto md:h-[550px]"
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}

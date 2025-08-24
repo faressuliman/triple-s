@@ -5,8 +5,26 @@ import logo from "../assets/logo.png";
 import Card from "../components/ui/Card";
 import { missionVision, storyTimeline } from "../data";
 import "../index.css"
+import Loading from "../components/ui/Loading";
+import { useEffect, useState } from "react";
 
 const About = () => {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate fetch or some async work
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
+
 
   // RENDERS
   const renderMissionVision = missionVision.map((item, index) => (
@@ -68,16 +86,16 @@ const About = () => {
         {/* Hero Content */}
         <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-8">
           <motion.div
-            className="flex flex-col max-w-2xl md:translate-y-0 -translate-y-4"
+            className="flex flex-col max-w-2xl md:translate-y-4 -translate-y-4"
             initial={{ y: 20 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap md:text-nowrap mb-3">
-              Your <span className="text-[#38d49c]">Gateway</span> To Smarter Seas
+              Shaping the <span className="text-[#38d49c]">Future</span> of Smarter Seas
             </h1>
-            <p className="md:text-xl text-lg text-[#f0f0f0]">
-              Delivering smart marine solutions that power safer, stronger, and more efficient vessels.
+            <p className="md:text-xl text-lg text-[#d5d5d5]">
+              We deliver advanced marine solutions that make vessels safer, stronger, more efficient, and environmentally responsible.
             </p>
           </motion.div>
         </div>
@@ -221,9 +239,10 @@ const About = () => {
         </div>
       </section>
 
-      {/* Foundation Section*/}
-      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#EEF6FB] grid lg:grid-cols-4 grid-cols-1 gap-8">
-        <div className="lg:col-span-4 col-span-1 space-y-8 max-w-screen-3xl w-full">
+      {/* Foundation Section */}
+      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#EEF6FB] grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-12 items-center">
+        {/* Text Section */}
+        <div className="space-y-8">
           <motion.div
             className="flex flex-row gap-3 items-center"
             initial={{ y: -20 }}
@@ -267,69 +286,8 @@ const About = () => {
             viewport={{ once: true, amount: 0.01 }}
             transition={{ duration: 0.8 }}
           >
-            Our foundation is built on integrity, reliability, and a passion for maritime excellence. These core principles guide our decisions and ensure we deliver lasting value to our partners and communities.
-          </motion.p>
-
-          <motion.p
-            className="text-[#4B6F9B] text-lg"
-            initial={{ x: 40 }}
-            whileInView={{ x: 0 }}
-            viewport={{ once: true, amount: 0.01 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-          >
-            Through disciplined execution and continuous improvement, we uphold the highest standards of safety, sustainability, and customer trust across every project we undertake.
-          </motion.p>
-        </div>
-      </section>
-
-      {/* Logo Section */}
-      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#EEF6FB] grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-12 items-center">
-        {/* Text Section */}
-        <div className="space-y-8">
-          <motion.div
-            className="flex flex-row gap-3 items-center"
-            initial={{ y: -20 }}
-            whileInView={{ y: 0 }}
-            viewport={{ once: true, amount: 0.01 }}
-            transition={{ duration: 0.8 }}
-          >
-            <motion.div
-              className="w-2 rounded-full bg-gradient-to-b from-[#0A3251] to-[#34CD97]"
-              initial={{ height: 0 }}
-              whileInView={{ height: 48 }}
-              viewport={{ once: true, amount: 0.01 }}
-              transition={{ duration: 0.8 }}
-            />
-            <motion.h2
-              className="text-[#0A3251] font-semibold text-sm"
-              initial={{ y: -12 }}
-              whileInView={{ y: 0 }}
-              viewport={{ once: true, amount: 0.01 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-            >
-              OUR IDENTITY
-            </motion.h2>
-          </motion.div>
-
-          <motion.div
-            className="text-3xl md:text-4xl lg:text-5xl font-bold"
-            initial={{ y: -14 }}
-            whileInView={{ y: 0 }}
-            viewport={{ once: true, amount: 0.01 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-          >
-            <h2 className=" text-[#07254B]">Precision At The Helm</h2>
-            <span className="text-transparent bg-gradient-to-r from-[#0A3251] to-[#88A0B4] bg-clip-text">A Symbol of Excellence</span>
-          </motion.div>
-
-          <motion.p
-            className="text-[#4B6F9B] text-lg"
-            initial={{ x: 40 }}
-            whileInView={{ x: 0 }}
-            viewport={{ once: true, amount: 0.01 }}
-            transition={{ duration: 0.8 }}
-          >
-            Our logo represents steadfast reliability and innovation at sea. It reflects our promise to deliver smart, sustainable solutions with discipline and care.
+            Our foundation is built on integrity, reliability, and a passion for maritime excellence. These core principles guide our decisions and ensure we deliver lasting value to our partners and communities. <br />
+            <br />Through disciplined execution and continuous improvement, we uphold the highest standards of safety, sustainability, and customer trust across every project we undertake.
           </motion.p>
         </div>
 

@@ -74,7 +74,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/"
-                className="block py-2 px-2 text-white normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-[#38d49c] sm:py-1.5 duration-300"
+                className="block py-2 px-2 text-white tracking-wide normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-[#38d49c] sm:py-1.5 duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 Home
@@ -83,7 +83,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/about"
-                className="block py-2 px-2 text-white normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-[#38d49c] sm:py-1.5 duration-300"
+                className="block py-2 px-2 text-white tracking-wide normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-[#38d49c] sm:py-1.5 duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 About Us
@@ -92,7 +92,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/contact"
-                className="block py-2 px-2 text-white normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-[#38d49c] sm:py-1.5 duration-300"
+                className="block py-2 px-2 text-white tracking-wide normal-case md:uppercase font-bold rounded-sm md:hover:bg-transparent md:hover:text-[#38d49c] sm:py-1.5 duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 Contact
