@@ -6,7 +6,7 @@ const LocationSection = () => {
   const LazyMap = lazy(() => import("../../components/ui/Map"))
 
   return (
-    <section className="pt-16 pb-24 bg-[#F8FDFF]">
+    <section className="pt-16 pb-24 bg-[#F8FDFF] shadow-black shadow-2xl">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
         <motion.div
           className="text-center mb-8"

@@ -77,7 +77,7 @@ const ImageSlideShow = () => {
   ));
 
   return (
-    <section className="pt-16 pb-24 bg-[#F8FDFF]">
+    <section className="pt-16 pb-24 bg-[#F8FDFF] shadow-[#000000] shadow-2xl">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-2"
