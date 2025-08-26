@@ -23,7 +23,7 @@ const ProcessSection = () => {
     <motion.div
       key={title}
       variants={cardVariants}
-      className="relative rounded-lg border border-[#CEF3FF] bg-white p-6 transition-colors duration-300 shadow-lg hover:shadow-indigo-300 hover:shadow-xl hover:cursor-default"
+      className="relative rounded-lg border border-[#CEF3FF] bg-white p-6 transition-all duration-300 transform hover:scale-101 hover:-translate-y-2 shadow-lg hover:shadow-indigo-300 hover:shadow-xl hover:cursor-default"
       whileHover={{ y: -6, scale: 1.01 }}
       transition={{ duration: 0.3 }}
       whileTap={{ scale: 0.98 }}
