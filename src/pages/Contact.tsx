@@ -11,6 +11,7 @@ import Textarea from "../components/ui/TextArea"
 import { useState, lazy, Suspense } from "react"
 import emailjs from 'emailjs-com';
 import toast from "react-hot-toast"
+import background from "../assets/contact-bg.png";
 
 // Map Lazy Load
 const LazyMap = lazy(() => import("../components/ui/Map"))
@@ -125,7 +126,7 @@ const Contact = () => {
       </section>
 
       {/*Main Content Section*/}
-      <section className="relative z-10 bg-[#EEF6FB] pb-24">
+      <section className="relative z-10 bg-[#EEF6FB] pb-24 bg-fit bg-center" style={{ backgroundImage: `url(${background})` }} >
 
         {/* Contact Form */}
         <div className="container mx-auto grid xl:grid-cols-3 md:grid-cols-1 grid-cols-1 pt-24 pb-24 lg:px-16 px-8 xl:gap-32 gap-24">
