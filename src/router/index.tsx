@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 
 import { Suspense, lazy } from "react";
-import Layout from "../components/Layout";
+import Layout from "../layout/Layout";
 import Loading from "../components/ui/Loading";
 const Home = lazy(() => import("../pages"));
 const About = lazy(() => import("../pages/About"));

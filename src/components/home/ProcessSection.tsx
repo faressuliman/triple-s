@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 
 const ProcessSection = () => {
 
-
-
   const containerVariants = {
     hidden: { opacity: 1 },
     show: {
@@ -24,8 +22,7 @@ const ProcessSection = () => {
       key={title}
       variants={cardVariants}
       className="relative rounded-lg border border-[#CEF3FF] bg-white p-6 transition-all duration-300 transform hover:scale-101 hover:-translate-y-2 shadow-lg hover:shadow-indigo-300 hover:shadow-xl hover:cursor-default"
-      whileHover={{ y: -6, scale: 1.01 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.2 }}
       whileTap={{ scale: 0.98 }}
     >
       <div className="flex items-center gap-3 mb-4">
@@ -33,7 +30,6 @@ const ProcessSection = () => {
           className="h-10 w-10 rounded-lg bg-gradient-to-br from-[#34CD97]/10 to-[#0A3251]/10 flex items-center justify-center"
           initial={{ scale: 0.9, rotate: -3 }}
           whileInView={{ scale: 1, rotate: 0 }}
-          transition={{ duration: 2 }}
           viewport={{ once: true, amount: 0.6 }}
         >
           <Icon className="text-[#0A3251]" />

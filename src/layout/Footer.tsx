@@ -9,7 +9,7 @@ const Footer = () => {
           
           {/* Company Info */}
           <div className="md:col-span-2">
-            <div className="flex items-center max-w-md space-x-2 mb-4">
+            <div className="flex items-center max-w-md space-x-2 mb-4 text-white">
               <Ship />
               <span className="text-xl font-bold text-white">Triple S Marine Services</span>
             </div>
@@ -25,7 +25,7 @@ const Footer = () => {
                 className="inline-block"
                 aria-label="Visit our LinkedIn page"
               >
-                <Linkedin className="h-6 w-6 text-blue-200 hover:text-[#38D49C] transition-colors duration-300" />
+                <Linkedin className="h-6 w-6 text-white hover:text-[#38D49C] transition-colors duration-300" />
               </a>
             </div>
           </div>

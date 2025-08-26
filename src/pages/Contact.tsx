@@ -126,10 +126,10 @@ const Contact = () => {
       </section>
 
       {/*Main Content Section*/}
-      <section className="relative z-10 bg-[#EEF6FB] pb-24 bg-fit bg-center" style={{ backgroundImage: `url(${background})` }} >
+      <section className="relative z-10 bg-[#EEF6FB] pt-16 pb-24 bg-fit bg-center" style={{ backgroundImage: `url(${background})` }} >
 
         {/* Contact Form */}
-        <div className="container mx-auto grid xl:grid-cols-3 md:grid-cols-1 grid-cols-1 pt-24 pb-24 lg:px-16 px-8 xl:gap-32 gap-24">
+        <div className="container mx-auto grid xl:grid-cols-3 md:grid-cols-1 grid-cols-1 pb-24 lg:px-16 px-8 xl:gap-32 gap-24">
           <motion.div
             className="bg-white xl:col-span-2 rounded-lg shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8"
             initial={{ x: -100, opacity: 0 }}

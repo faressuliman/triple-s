@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { services } from "../../data/";
+import background from "../../assets/contact-bg.png";
 
 const ServicesSection = () => {
 
@@ -19,7 +20,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="pt-16 pb-24 bg-[#EEF6FB]">
+    <section className="pt-16 pb-24 bg-[#EEF6FB]" style={{ backgroundImage: `url(${background})` }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
         <motion.div
           className="text-center mb-2"
