@@ -17,14 +17,6 @@ const Navbar = () => {
             alt="Triple S Logo"
             fetchPriority="high"
             loading="eager"
-            animate={{ 
-              scale: [1, 1.1, 1],
-              rotate: [0, 5, -5, 0]
-            }}
-            transition={{
-              scale: { duration: 3, repeat: Infinity, ease: "easeInOut" },
-              rotate: { duration: 4, repeat: Infinity, ease: "easeInOut" }
-            }}
           />
           <span className="self-center md:text-2xl hidden md:block text-lg font-semibold whitespace-nowrap text-white">
             Triple S Marine Services
