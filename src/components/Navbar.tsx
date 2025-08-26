@@ -26,7 +26,7 @@ const Navbar = () => {
               rotate: { duration: 4, repeat: Infinity, ease: "easeInOut" }
             }}
           />
-          <span className="self-center md:text-2xl text-lg font-semibold whitespace-nowrap text-white">
+          <span className="self-center md:text-2xl hidden md:block text-lg font-semibold whitespace-nowrap text-white">
             Triple S Marine Services
           </span>
         </NavLink>
