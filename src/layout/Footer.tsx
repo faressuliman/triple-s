@@ -9,7 +9,7 @@ const Footer = () => {
           
           {/* Company Info */}
           <div className="md:col-span-2">
-            <div className="flex items-center max-w-md space-x-2 mb-6 text-white">
+            <div className="flex items-center max-w-md space-x-2 lg:mb-6 mb-4 text-white">
               <Ship className="text-[#38d49c]"/>
               <span className="text-xl font-bold text-white">Triple S Marine Services</span>
             </div>
