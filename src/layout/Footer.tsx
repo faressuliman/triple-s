@@ -9,9 +9,9 @@ const Footer = () => {
           
           {/* Company Info */}
           <div className="md:col-span-2">
-            <div className="flex items-center max-w-md space-x-2 lg:mb-6 mb-4 text-white">
-              <Ship className="text-[#38d49c]"/>
-              <span className="text-xl font-bold text-white">Triple S Marine Services</span>
+            <div className="flex items-center max-w-md space-x-2  mb-4 text-white">
+              <Ship/>
+              <span className="text-lg font-bold text-white">Triple S Marine Services</span>
             </div>
             <p className="text-[#d4d4d4] mb-4 max-w-md font-semibold">
               Your trusted partner in the marine industry. We provide comprehensive
@@ -32,8 +32,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-bold mb-2">Quick Links</h3>
-            <div className="w-10 h-0.5 bg-[#38D49C] mb-4 rounded"></div>
+            <h3 className="text-white font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2 font-semibold">
               <li>
                 <Link to="/" className="text-[#d4d4d4] hover:text-[#38D49C] duration-300">Home</Link>
@@ -49,8 +48,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="font-bold mb-2 text-white">Our Services</h3>
-            <div className="w-10 h-0.5 bg-[#38D49C] mb-4 rounded"></div>
+            <h3 className="font-bold mb-4 text-white">Our Services</h3>
             <ul className="space-y-2 text-[#d4d4d4] font-semibold">
               <li>Marine Equipment</li>
               <li>Technical Support</li>
