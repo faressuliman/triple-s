@@ -2,27 +2,34 @@ import { steps } from "../../data";
 import { motion } from "framer-motion";
 
 const ProcessSection = () => {
-
+  
   const containerVariants = {
-    hidden: { opacity: 1 },
+    hidden: { opacity: 1 }, 
     show: {
-      opacity: 1,
-      transition: { staggerChildren: 0.15, delayChildren: 0.05 },
+      transition: {
+        staggerChildren: 0.05, 
+      },
     },
   } as const;
 
   const cardVariants = {
-    hidden: { opacity: 0, y: 24, scale: 0.96 },
-    show: { opacity: 1, y: 0, scale: 1 },
+    hidden: { opacity: 0, y: -10 }, 
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
   } as const;
 
   // RENDER
   const renderProcesses = steps.map(({ title, description, Icon }) => (
     <motion.div
       key={title}
-      variants={cardVariants}
+      variants={cardVariants} 
       className="relative rounded-lg border border-[#CEF3FF] bg-white p-6 transition-all duration-300 transform hover:scale-101 hover:-translate-y-2 shadow-lg hover:shadow-indigo-300 hover:shadow-xl hover:cursor-default"
-      transition={{ duration: 0.2 }}
       whileTap={{ scale: 0.98 }}
     >
       <div className="flex items-center gap-3 mb-4">
@@ -38,7 +45,7 @@ const ProcessSection = () => {
       </div>
       <p className="text-[#4B6F9B] leading-relaxed">{description}</p>
     </motion.div>
-  ))
+  ));
 
   return (
     <section className="pt-16 pb-24 bg-[#EEF6FB]">
@@ -50,7 +57,9 @@ const ProcessSection = () => {
           viewport={{ once: true, amount: 0.01 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="md:text-3xl text-2xl font-bold text-[#07254B]">How We Deliver Projects</h2>
+          <h2 className="md:text-3xl text-2xl font-bold text-[#07254B]">
+            How We Deliver Projects
+          </h2>
         </motion.div>
 
         <motion.div
@@ -61,7 +70,7 @@ const ProcessSection = () => {
           viewport={{ once: true, amount: 0.01 }}
         >
           <p className="md:text-lg text-base max-w-2xl mx-auto text-[#4B6F9B]">
-            From requirements and engineering to procurement, delivery and long‑term support.
+            From requirements and engineering to procurement, delivery and long-term support.
           </p>
         </motion.div>
 
@@ -85,8 +94,6 @@ const ProcessSection = () => {
             {renderProcesses}
           </motion.div>
         </div>
-
-
       </div>
     </section>
   );

@@ -5,15 +5,15 @@ const Footer = () => {
   return (
     <div className="bg-[#07254B] text-[#d4d4d4] md:px-12 px-6">
       <div className="mx-auto px-4 sm:px-6 md:px-0 lg:px-8 py-12">
-        <div className="flex flex-col lg:grid lg:grid-cols-4  gap-8">
+        <div className="flex flex-col lg:grid lg:grid-cols-4 gap-8">
           
           {/* Company Info */}
           <div className="md:col-span-2">
-            <div className="flex items-center max-w-md space-x-2 mb-4 text-white">
-              <Ship />
+            <div className="flex items-center max-w-md space-x-2 mb-6 text-white">
+              <Ship className="text-[#38d49c]"/>
               <span className="text-xl font-bold text-white">Triple S Marine Services</span>
             </div>
-            <p className="text-[#d4d4d4] mb-4 max-w-md">
+            <p className="text-[#d4d4d4] mb-4 max-w-md font-semibold">
               Your trusted partner in the marine industry. We provide comprehensive
               solutions for all your maritime needs with commitment and excellence.
             </p>
@@ -22,18 +22,19 @@ const Footer = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block"
+                className="inline-block rounded-lg bg-[#0A3251] p-2 hover:bg-[#0E5A6C] transition-colors duration-300 group"
                 aria-label="Visit our LinkedIn page"
               >
-                <Linkedin className="h-6 w-6 text-white hover:text-[#38D49C] transition-colors duration-300" />
+                <Linkedin className="h-6 w-6 text-white group-hover:text-[#38d49c]" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="text-white font-bold mb-2">Quick Links</h3>
+            <div className="w-10 h-0.5 bg-[#38D49C] mb-4 rounded"></div>
+            <ul className="space-y-2 font-semibold">
               <li>
                 <Link to="/" className="text-[#d4d4d4] hover:text-[#38D49C] duration-300">Home</Link>
               </li>
@@ -48,8 +49,9 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="font-semibold mb-4 text-white">Our Services</h3>
-            <ul className="space-y-2 text-[#d4d4d4]">
+            <h3 className="font-bold mb-2 text-white">Our Services</h3>
+            <div className="w-10 h-0.5 bg-[#38D49C] mb-4 rounded"></div>
+            <ul className="space-y-2 text-[#d4d4d4] font-semibold">
               <li>Marine Equipment</li>
               <li>Technical Support</li>
               <li>Custom Solutions</li>
@@ -59,9 +61,9 @@ const Footer = () => {
         </div>
 
         {/* The bottom copyright section */}
-        <div className="border-t border-[#38506E] mt-8 pt-8">
+        <div className="border-t border-[#747d88] mt-8 pt-8">
           <div className="flex justify-center md:justify-start">
-            <p className="text-[#d4d4d4] text-sm">
+            <p className="text-[#e0dfdf] text-sm font-semibold">
               © 2025 Triple S Marine Services. All rights reserved.
             </p>
           </div>
