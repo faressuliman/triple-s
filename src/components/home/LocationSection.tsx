@@ -7,7 +7,7 @@ const LocationSection = () => {
 
   return (
     <section className="pt-16 pb-24 bg-[#F8FDFF] shadow-black shadow-2xl">
-      <div className="container mx-auto px-6 lg:px-20">
+      <div className="container mx-auto px-6 lg:px-16">
         <motion.div
           className="text-center mb-8"
           initial={{ opacity: 0, y: 16 }}

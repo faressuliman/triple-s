@@ -35,7 +35,7 @@ const HeroSection = () => {
       </section>
 
       {/* Content */}
-      <section className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-6">
+      <section className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-16 px-6">
         <motion.div
           className="flex flex-col max-w-2xl"
           initial={{ opacity: 0.1 }}

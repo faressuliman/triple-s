@@ -21,7 +21,7 @@ const ServicesSection = () => {
 
   return (
     <section className="pt-16 pb-24 bg-[#EEF6FB]" style={{ backgroundImage: `url(${background})` }}>
-      <div className="container mx-auto px-6 lg:px-20">
+      <div className="container mx-auto px-6 lg:px-16">
         <motion.div
           className="text-center mb-2"
           initial={{ y: -50, opacity: 0 }}

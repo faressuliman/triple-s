@@ -84,7 +84,7 @@ const About = () => {
         </motion.div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-4">
+        <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-16 px-4">
           <motion.div
             className="flex flex-col max-w-2xl md:translate-y-4 -translate-y-4"
             initial={{ y: 20 }}
