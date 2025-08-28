@@ -37,7 +37,7 @@ const ImageSlideShow = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
       <motion.div
-        className="absolute bottom-6 left-6 p-6 md:p-8 text-white"
+        className="absolute md:bottom-6 bottom-3 md:left-6 left-4 p-6 md:p-8 text-white"
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -47,7 +47,7 @@ const ImageSlideShow = () => {
           initial={{ y: 12, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-2xl md:text-3xl font-bold mb-2"
+          className="text-xl md:text-3xl font-bold mb-2"
         >
           {slide.title}
         </motion.h3>
@@ -78,7 +78,7 @@ const ImageSlideShow = () => {
 
   return (
     <section className="pt-16 pb-24 bg-[#F8FDFF] shadow-[#000000] shadow-2xl">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           className="text-center mb-2"
           initial={{ opacity: 0, y: 20 }}
@@ -105,7 +105,7 @@ const ImageSlideShow = () => {
       </div>
 
       <motion.div
-        className="relative max-w-6xl mx-auto px-4"
+        className="relative max-w-6xl mx-auto px-6"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.1 }}
@@ -117,7 +117,7 @@ const ImageSlideShow = () => {
 
         {/* Navigation Buttons */}
         <motion.button
-          className="cursor-pointer absolute left-5 md:left-8 top-1/2 -translate-y-1/2 md:w-10 md:h-10 w-7 h-7 bg-white/20 text-white rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
+          className="cursor-pointer absolute left-8 md:left-8 top-1/2 -translate-y-1/2 md:w-10 md:h-10 w-7 h-7 bg-white/20 text-white rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
           onClick={prevSlide}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
@@ -126,7 +126,7 @@ const ImageSlideShow = () => {
           <ChevronLeft size={24} />
         </motion.button>
         <motion.button
-          className="cursor-pointer absolute right-5 md:right-8 top-1/2 -translate-y-1/2 md:w-10 md:h-10 w-7 h-7 bg-white/24.5 text-white rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
+          className="cursor-pointer absolute right-8 md:right-8 top-1/2 -translate-y-1/2 md:w-10 md:h-10 w-7 h-7 bg-white/24.5 text-white rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
           onClick={nextSlide}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}

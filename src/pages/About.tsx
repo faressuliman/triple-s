@@ -84,7 +84,7 @@ const About = () => {
         </motion.div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-8">
+        <div className="relative z-10 text-white w-full max-w-screen-3xl mx-auto lg:px-20 px-4">
           <motion.div
             className="flex flex-col max-w-2xl md:translate-y-4 -translate-y-4"
             initial={{ y: 20 }}
@@ -102,7 +102,7 @@ const About = () => {
       </section>
 
       {/*Main Content Section*/}
-      <section className="mx-auto grid lg:grid-cols-4  md:grid-cols-1 grid-cols-1 items-stretch pt-16 pb-24 bg-[#EEF6FB] lg:px-16 px-8 gap-8">
+      <section className="mx-auto grid lg:grid-cols-4  md:grid-cols-1 grid-cols-1 items-stretch pt-16 pb-24 bg-[#EEF6FB] lg:px-16 px-6 gap-8">
 
         {/* Story Section */}
         <div className="col-span-2 space-y-8 max-w-3xl">
@@ -206,7 +206,7 @@ const About = () => {
       </section>
 
       {/* Mission and Vision Section */}
-      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#EEF6FB]">
+      <section className="mx-auto lg:px-16 px-6 pt-16 pb-20 bg-[#EEF6FB]">
         <div className="max-w-screen-3xl mx-auto">
           <motion.div
             className="flex flex-row gap-3 items-center mb-12"
@@ -240,7 +240,7 @@ const About = () => {
       </section>
 
       {/* Foundation Section */}
-      <section className="mx-auto lg:px-16 px-8 pt-16 pb-20 bg-[#EEF6FB] grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-12 items-center">
+      <section className="mx-auto lg:px-16 px-6 pt-16 pb-20 bg-[#EEF6FB] grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-12 items-center">
         {/* Text Section */}
         <div className="space-y-8">
           <motion.div
