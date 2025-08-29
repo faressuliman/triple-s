@@ -129,7 +129,7 @@ const Contact = () => {
       <section className="relative z-10 bg-[#EEF6FB] pt-16 pb-24 bg-fit bg-center" style={{ backgroundImage: `url(${background})` }} >
 
         {/* Contact Form */}
-        <div className="container mx-auto grid xl:grid-cols-3 md:grid-cols-1 grid-cols-1 pb-24 lg:px-16 px-6 xl:gap-32 gap-24">
+        <div className="container mx-auto grid xl:grid-cols-3 md:grid-cols-1 grid-cols-1 pb-24 lg:px-16 xl:px-0 px-6 xl:gap-52 gap-24">
           <motion.div
             className="bg-white xl:col-span-2 rounded-lg shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8"
             initial={{ x: -100, opacity: 0 }}
@@ -146,7 +146,7 @@ const Contact = () => {
             >
               Send us a message!
             </motion.h2>
-            <form onSubmit={(handleSubmit(onSubmit))} className="space-y-8">
+            <form onSubmit={(handleSubmit(onSubmit))} className="space-y-8 xl:space-y-12">
               <motion.div
                 className="grid grid-cols-1 md:grid-cols-2 gap-8"
                 initial={{ x: -100, opacity: 0 }}
@@ -205,7 +205,7 @@ const Contact = () => {
 
           {/* Get In Touch */}
           <motion.div
-            className="bg-white rounded-lg shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8 xl:col-span-1 md:mx-auto md:w-3/5 xl:w-auto md:h-[550px]"
+            className="bg-white rounded-lg shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8 xl:col-span-1 md:mx-auto md:w-3/5 xl:w-auto md:h-[550px] xl:h-[590px]"
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -220,7 +220,7 @@ const Contact = () => {
             >
               Get In Touch
             </motion.h1>
-            <div className="flex flex-col justify-between gap-12 flex-1">
+            <div className="flex flex-col justify-between gap-12 xl:gap-16 flex-1">
               {renderGetInTouch}
             </div>
           </motion.div>
@@ -228,7 +228,7 @@ const Contact = () => {
 
         {/* Map */}
         <motion.div
-          className="container mx-auto lg:px-16 px-6 bg-[#EEF6FB]"
+          className="container mx-auto lg:px-16 xl:px-0 px-6 bg-[#EEF6FB]"
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
