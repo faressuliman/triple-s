@@ -129,7 +129,7 @@ const Contact = () => {
       <section className="relative z-10 bg-[#EEF6FB] pt-16 pb-24 bg-fit bg-center" style={{ backgroundImage: `url(${background})` }} >
 
         {/* Contact Form */}
-        <div className="container mx-auto grid xl:grid-cols-3 md:grid-cols-1 grid-cols-1 pb-24 lg:px-16 xl:px-0 px-6 xl:gap-52 gap-24">
+        <div className="container mx-auto grid xl:grid-cols-3 md:grid-cols-1 grid-cols-1 pb-24 lg:px-16 px-6 gap-24">
           <motion.div
             className="bg-white xl:col-span-2 rounded-lg shadow-xl shadow-indigo-300 border border-[#CEF3FF] p-8"
             initial={{ x: -100, opacity: 0 }}
@@ -228,7 +228,7 @@ const Contact = () => {
 
         {/* Map */}
         <motion.div
-          className="container mx-auto lg:px-16 xl:px-0 px-6 bg-[#EEF6FB]"
+          className="container mx-auto lg:px-16 px-6 bg-[#EEF6FB]"
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}

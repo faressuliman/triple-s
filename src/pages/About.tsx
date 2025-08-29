@@ -164,7 +164,7 @@ const About = () => {
                 <Award className="h-6 w-6 text-[#07254B]" />
               </div>
               <div>
-                <h3 className="font-semibold text-[#0A3251] mb-1">Industry Recognition</h3>
+                <h3 className="font-semibold text-[#0A3251] mb-1 text-sm md:text-base">Industry Recognition</h3>
                 <p className="text-sm text-[#4B6F9B]">
                   Multiple awards for innovation and excellence
                 </p>
@@ -176,7 +176,7 @@ const About = () => {
                 <ShieldHalf className="h-6 w-6 text-[#07254B]" />
               </div>
               <div>
-                <h3 className="font-semibold text-[#0A3251] mb-1">Expert Team</h3>
+                <h3 className="font-semibold text-[#0A3251] mb-1 text-sm md:text-base">Expert Team</h3>
                 <p className="text-sm text-[#4B6F9B]">
                   World-class professionals driving innovation
                 </p>

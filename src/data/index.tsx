@@ -33,7 +33,7 @@ export const slideShow: ISlideShow[] = [
 export const services: IServices[] = [
     {
         icon: ShipWheel,
-        title: "Propulsion Design • Shaftlines and Propellers",
+        title: "Propulsion Design - Shaftlines and Propellers",
         description: "Calculations for shaft diameter, bearing spans and alignment, propeller selection and supply of shaftline components.",
         color: "text-primary",
     },
