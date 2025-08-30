@@ -60,7 +60,7 @@ const ServicesSection = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 60 }}
                 transition={{ duration: 0.35, ease: "easeOut" }}
-                className="flex flex-row md:flex-row items-start md:items-center gap-4 md:gap-8 text-left md:text-left px-6 md:px-10 py-6 md:py-10 pr-14 md:pr-16 pb-16 md:pb-10 h-64 md:h-56"
+                className="flex flex-row md:flex-row items-start md:items-center gap-4 md:gap-8 text-left md:text-left px-6 md:px-10 py-5 md:py-10 pr-14 md:pr-16 pb-16 md:pb-10 h-64 md:h-56"
               >
                 {(() => {
                   const { icon: Icon, title, description, color } = services[currentIndex];
@@ -106,7 +106,7 @@ const ServicesSection = () => {
             <button
               onClick={nextService}
               aria-label="Next"
-              className="absolute bottom-3 right-3 lg:bottom-auto lg:top-1/2 lg:-translate-y-1/2 h-10 w-10 md:h-12 md:w-12 rounded-full bg-[#0A3251] text-white flex items-center justify-center hover:bg-[#0c3e64] transition-colors cursor-pointer"
+              className="absolute bottom-3 right-3 lg:bottom-auto lg:top-1/2 lg:-translate-y-1/2 h-9 w-9 md:h-12 md:w-12 rounded-full bg-[#0A3251] text-white flex items-center justify-center hover:bg-[#0c3e64] transition-colors cursor-pointer"
             >
               <ChevronRight size={22} />
             </button>
