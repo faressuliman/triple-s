@@ -116,7 +116,7 @@ const Contact = () => {
             animate={{ y: 0 }}
             transition={{ duration: 1, delay: 0.1 }}
           >
-            <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap md:text-nowrap mb-3">
+            <h1 className="lg:text-3xl text-2xl font-bold text-wrap md:text-nowrap mb-3">
               Contact Us for Trusted <span className="text-[#38d49c]">Marine</span> Guidance
             </h1>
             <p className="md:text-xl text-lg text-[#d5d5d5]">
@@ -211,7 +211,7 @@ const Contact = () => {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ type: "spring", stiffness: 80, damping: 25, duration: 1.2 }}
           >
-            <motion.h1
+            <motion.h2
               className="text-center md:text-3xl text-2xl mb-10 font-bold text-[#07254B]"
               initial={{ y: -50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -219,7 +219,7 @@ const Contact = () => {
               transition={{ type: "spring", stiffness: 100, damping: 30, duration: 1.2 }}
             >
               Get In Touch
-            </motion.h1>
+            </motion.h2>
             <div className="flex flex-col justify-between gap-12 xl:gap-16 flex-1">
               {renderGetInTouch}
             </div>
