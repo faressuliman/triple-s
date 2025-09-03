@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Button from "../ui/Button";
 import vid from "../../assets/backgroundvid.mp4";
-import posterImage from "../../assets/posterImage.jpg";
+import posterImage from "../../assets/posterImage.webp";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 

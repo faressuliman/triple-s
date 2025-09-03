@@ -1,10 +1,7 @@
 import type { ISlideShow, IServices, ISteps, IGetInTouch, IStory } from "../interfaces";
-// removed unused legacy images
-import firstSlide from "../assets/firstslide.jpeg"
-import thirdSlide from "../assets/thirdslide.jpeg"
-import secondSlide from "../assets/secondslide.jpeg"
-// import equipment1 from "../assets/equipment-1.jpg"
-// import oceanWaves from "../assets/ocean-waves.jpg"
+import firstSlide from "../assets/firstslide.webp"
+import thirdSlide from "../assets/thirdslide.webp"
+import secondSlide from "../assets/secondslide.webp"
 import { Clock, Target, Wrench, ShieldCheck, MapPin, Mail, Compass, Lightbulb, Anchor, Fan, ShipWheel, DatabaseZap } from "lucide-react";
 
 export const slideShow: ISlideShow[] = [

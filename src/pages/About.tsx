@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import sea from "../assets/sea.png"
+import sea from "../assets/sea.webp"
 import { Award, ShieldHalf } from "lucide-react";
 import logo from "../assets/logo.png";
 import Card from "../components/ui/Card";
