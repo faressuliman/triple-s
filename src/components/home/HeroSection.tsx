@@ -43,7 +43,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <h1
-            className="lg:text-4xl md:text-3xl text-2xl font-bold text-wrap mb-8"
+            className="md:text-3xl text-2xl font-bold text-wrap mb-8"
 
           >
             <span className="text-[#38d49c]">Marine</span> Systems Engineering and Supply

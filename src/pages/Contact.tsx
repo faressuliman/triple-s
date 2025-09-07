@@ -116,7 +116,7 @@ const Contact = () => {
             animate={{ y: 0 }}
             transition={{ duration: 1, delay: 0.1 }}
           >
-            <h1 className="lg:text-3xl text-2xl font-bold text-wrap md:text-nowrap mb-3">
+            <h1 className="md:text-3xl text-2xl font-bold text-wrap md:text-nowrap mb-3">
               Contact Us for Trusted <span className="text-[#38d49c]">Marine</span> Guidance
             </h1>
             <p className="md:text-xl text-lg text-[#d5d5d5]">
