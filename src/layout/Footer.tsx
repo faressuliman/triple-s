@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
-    <div className="bg-[#07254B] text-[#d4d4d4] px-6 lg:px-16">
+    <div className="bg-[#07254B] text-white px-6 lg:px-16">
       <div className="mx-auto py-12">
         <div className="flex flex-col lg:grid lg:grid-cols-4 gap-8">
           
@@ -13,7 +13,7 @@ const Footer = () => {
               <Ship/>
               <span className="text-lg font-bold text-white">Triple S Marine Services</span>
             </div>
-            <p className="text-[#d4d4d4] mb-4 max-w-md font-semibold">
+            <p className="text-white mb-4 max-w-md  text-sm tracking-wide">
               Your trusted partner in the marine industry. We provide comprehensive
               solutions for all your maritime needs with commitment and excellence.
             </p>
@@ -33,15 +33,15 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3 className="text-white font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2 font-semibold">
+            <ul className="space-y-2 text-sm lg:translate-x-5">
               <li>
-                <Link to="/" className="text-[#d4d4d4] hover:text-[#38D49C] duration-300">Home</Link>
+                <Link to="/" className="text-white hover:text-[#38D49C] duration-300">Home</Link>
               </li>
               <li>
-                <Link to="/about" className="text-[#d4d4d4] hover:text-[#38D49C] duration-300">About</Link>
+                <Link to="/about" className="text-white hover:text-[#38D49C] duration-300">About</Link>
               </li>
               <li>
-                <Link to="/contact" className="text-[#d4d4d4] hover:text-[#38D49C] duration-300">Contact</Link>
+                <Link to="/contact" className="text-white hover:text-[#38D49C] duration-300">Contact</Link>
               </li>
             </ul>
           </div>
@@ -49,7 +49,7 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h3 className="font-bold mb-4 text-white">Our Services</h3>
-            <ul className="space-y-2 text-[#d4d4d4] font-semibold">
+            <ul className="space-y-2 text-white text-sm">
               <li>Marine Equipment</li>
               <li>Technical Support</li>
               <li>Custom Solutions</li>
@@ -59,9 +59,9 @@ const Footer = () => {
         </div>
 
         {/* The bottom copyright section */}
-        <div className="border-t border-[#747d88] mt-8 pt-8">
+        <div className="border-t border-[#2d4868] mt-8 pt-8">
           <div className="flex justify-center md:justify-start">
-            <p className="text-[#e0dfdf] text-sm font-semibold">
+            <p className="text-[#e0dfdf] text-xs">
               © 2025 Triple S Marine Services. All rights reserved.
             </p>
           </div>
