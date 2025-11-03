@@ -32,8 +32,8 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm lg:translate-x-5">
+            <h3 className="text-white font-bold mb-4 lg:-translate-x-15">Quick Links</h3>
+            <ul className="space-y-2 text-sm lg:-translate-x-10">
               <li>
                 <Link to="/" className="text-white hover:text-[#38D49C] duration-300">Home</Link>
               </li>
